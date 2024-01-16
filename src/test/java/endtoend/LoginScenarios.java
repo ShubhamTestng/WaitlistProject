@@ -48,28 +48,28 @@ public class LoginScenarios extends BaseClass {
 	
 	}
 	
-//	@Test(priority=2)
-//	public void invalidPassword() throws Throwable {
-//		
-//		LandingPage land = new LandingPage(driver);	
-//		land.getLoginButton().click();	
-//		log.info("Clicked login button");
-//		
-//		LoginPage login = new LoginPage(driver);
-//		log.info("Login page opened");
-//		
-//		login.getEmailTetField().sendKeys(fileUtils.readFromPropertyFile("email"));
-//		log.info("Email Entered");
-//		
-//		login.getPasswordTextField().sendKeys("654321");
-//		log.info("Password Entered");
-//		
-//		login.getLoginButton().click();
-//		log.info("Clicked login button");	
-//		
-//		Assert.assertFalse(driver.getCurrentUrl().equals("https://fourtopstaging.appspot.com/welcome"));
-//		
-//	}
+	@Test(priority=2)
+	public void invalidPassword() throws Throwable {
+		
+		LandingPage land = new LandingPage(driver);	
+		land.getLoginButton().click();	
+		log.info("Clicked login button");
+		
+		LoginPage login = new LoginPage(driver);
+		log.info("Login page opened");
+		
+		login.getEmailTetField().sendKeys(fileUtils.readFromPropertyFile("email"));
+		log.info("Email Entered");
+		
+		login.getPasswordTextField().sendKeys("654321");
+		log.info("Password Entered");
+		
+		login.getLoginButton().click();
+		log.info("Clicked login button");	
+		
+		Assert.assertFalse(driver.getCurrentUrl().equals("https://fourtopstaging.appspot.com/welcome"));
+		
+	}
 //	
 //	@Test(priority=3)
 //	public void invalidEmail() throws Throwable {
