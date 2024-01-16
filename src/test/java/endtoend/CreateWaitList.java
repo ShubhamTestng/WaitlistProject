@@ -89,11 +89,11 @@ public class CreateWaitList extends BaseClass {
 	Select drop = new Select(dropdown);
 	drop.selectByVisibleText("45 Minutes");
 	
-//	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
-//	WebElement nextBtn = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//button[text()='next']"))));
-//	nextBtn.click();
-//	
-//	driver.findElement(By.xpath("//tr[@id='assign_7']")).click();
+	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+	WebElement nextBtn = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//button[text()='next']"))));
+	nextBtn.click();
+	
+	driver.findElement(By.xpath("//tr[@id='assign_7']")).click();
 //	nextBtn.click();
 //	
 //	WebElement checkmark = driver.findElement(By.xpath("//span[text()='"+randomPhone+"']/../../td[9]/div[@id='request_2_undefined']"));
