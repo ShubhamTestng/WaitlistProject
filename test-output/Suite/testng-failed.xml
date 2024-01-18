@@ -7,13 +7,16 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="endtoend.CreateWaitList">
+      <class name="endtoend.Create_Edit_delete_waitlist">
         <methods>
-          <include name="executeBeforeClass"/>
-          <include name="Test"/>
-          <include name="executeAfterClass"/>
+          <include name="deleteParty" invocation-numbers="0"/>
+          <include name="editParty" invocation-numbers="0"/>
+          <include name="executeBeforeTest"/>
+          <include name="restoreParty" invocation-numbers="0"/>
+          <include name="checkHistory" invocation-numbers="0"/>
+          <include name="executeAfterTest"/>
         </methods>
-      </class> <!-- endtoend.CreateWaitList -->
+      </class> <!-- endtoend.Create_Edit_delete_waitlist -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

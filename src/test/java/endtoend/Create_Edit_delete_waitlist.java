@@ -91,7 +91,7 @@ public class Create_Edit_delete_waitlist extends BaseClass {
 		
 		
 		EditParty editParty = new EditParty(driver);
-		driver.findElement(By.xpath("//td[text()='Robert']/span[text()='4568972842']")).click();
+		driver.findElement(By.xpath("//td[text()='Robert']")).click();
 		
 		//Delete Party
 		editParty.getDeleteButton().click();
@@ -120,9 +120,9 @@ public class Create_Edit_delete_waitlist extends BaseClass {
 		
 		//Check party is restored
 		driver.findElement(By.xpath("//a[text()='Waitlist']")).click();
-		if(driver.findElement(By.xpath("//td[text()='Robert']/span[text()='4568972842']")).isDisplayed()) {
+		if(driver.findElement(By.xpath("//td[text()='Robert']")).isDisplayed()) {
 		System.out.println("Present");
-		driver.findElement(By.xpath("//td[text()='Robert']/span[text()='4568972842']")).click();
+		driver.findElement(By.xpath("//td[text()='Robert']")).click();
 		} 
 	}
 	

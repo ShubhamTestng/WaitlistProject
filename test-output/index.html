@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">10 methods, 4 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="endtoend.Create_Edit_delete_waitlist" class="method navigator-link" hash-for-method="checkHistory(Smith, 564582549, Smith@yopmail.com)">checkHistory(Smith, 564582549, Smith@yopmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="endtoend.Create_Edit_delete_waitlist" class="method navigator-link" hash-for-method="deleteParty(Smith, 564582549, Smith@yopmail.com)">deleteParty(Smith, 564582549, Smith@yopmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="endtoend.Create_Edit_delete_waitlist" class="method navigator-link" hash-for-method="editParty(Smith, 564582549, Smith@yopmail.com)">editParty(Smith, 564582549, Smith@yopmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="endtoend.Create_Edit_delete_waitlist" class="method navigator-link" hash-for-method="restoreParty(Smith, 564582549, Smith@yopmail.com)">restoreParty(Smith, 564582549, Smith@yopmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,17 +133,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="endtoend.Create_Edit_delete_waitlist" class="method navigator-link" hash-for-method="checkHistory(Smith, 564582549, Smith@yopmail.com)">checkHistory(Smith, 564582549, Smith@yopmail.com)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="endtoend.CreateEditDeleteEtaWaitlist" class="method navigator-link" hash-for-method="checkHistory(Richard, 654879879, Richard@yopmail.com)">checkHistory(Richard, 654879879, Richard@yopmail.com)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="endtoend.Create_Edit_delete_waitlist" class="method navigator-link" hash-for-method="createWaitList(Smith, 564582549, Smith@yopmail.com)">createWaitList(Smith, 564582549, Smith@yopmail.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -124,17 +143,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="endtoend.Create_Edit_delete_waitlist" class="method navigator-link" hash-for-method="createWaitList(Smith, 564582549, Smith@yopmail.com)">createWaitList(Smith, 564582549, Smith@yopmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="endtoend.CreateEditDeleteEtaWaitlist" class="method navigator-link" hash-for-method="deleteParty(Richard, 654879879, Richard@yopmail.com)">deleteParty(Richard, 654879879, Richard@yopmail.com)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="endtoend.Create_Edit_delete_waitlist" class="method navigator-link" hash-for-method="deleteParty(Smith, 564582549, Smith@yopmail.com)">deleteParty(Smith, 564582549, Smith@yopmail.com)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="endtoend.Create_Edit_delete_waitlist" class="method navigator-link" hash-for-method="editParty(Smith, 564582549, Smith@yopmail.com)">editParty(Smith, 564582549, Smith@yopmail.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -145,11 +159,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="endtoend.CreateEditDeleteEtaWaitlist" class="method navigator-link" hash-for-method="restoreParty(Richard, 654879879, Richard@yopmail.com)">restoreParty(Richard, 654879879, Richard@yopmail.com)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="endtoend.Create_Edit_delete_waitlist" class="method navigator-link" hash-for-method="restoreParty(Smith, 564582549, Smith@yopmail.com)">restoreParty(Smith, 564582549, Smith@yopmail.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -164,9 +173,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">endtoend.Create_Edit_delete_waitlist</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -176,14 +185,30 @@
                   </a> <!-- checkHistory(Smith, 564582549, Smith@yopmail.com) -->
                   <span class="method-name">checkHistory</span>
                   <span class="parameters">(Smith, 564582549, Smith@yopmail.com)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createWaitList(Smith, 564582549, Smith@yopmail.com)">
-                  </a> <!-- createWaitList(Smith, 564582549, Smith@yopmail.com) -->
-                  <span class="method-name">createWaitList</span>
-                  <span class="parameters">(Smith, 564582549, Smith@yopmail.com)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Robert&apos;]&quot;}
+  (Session info: chrome=120.0.6099.217)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88a9861332e7ec444efc2bbdc74417ad, findElement {using=xpath, value=//span[text()=&apos;Robert&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.217, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64220}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64220/devtoo..., se:cdpVersion: 120.0.6099.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 88a9861332e7ec444efc2bbdc74417ad
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at endtoend.Create_Edit_delete_waitlist.checkHistory(Create_Edit_delete_waitlist.java:111)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -192,6 +217,30 @@
                   </a> <!-- deleteParty(Smith, 564582549, Smith@yopmail.com) -->
                   <span class="method-name">deleteParty</span>
                   <span class="parameters">(Smith, 564582549, Smith@yopmail.com)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[text()=&apos;Robert&apos;]/span[text()=&apos;4568972842&apos;]&quot;}
+  (Session info: chrome=120.0.6099.217)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88a9861332e7ec444efc2bbdc74417ad, findElement {using=xpath, value=//td[text()=&apos;Robert&apos;]/span[text()=&apos;4568972842&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.217, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64220}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64220/devtoo..., se:cdpVersion: 120.0.6099.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 88a9861332e7ec444efc2bbdc74417ad
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at endtoend.Create_Edit_delete_waitlist.deleteParty(Create_Edit_delete_waitlist.java:94)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -200,6 +249,33 @@
                   </a> <!-- editParty(Smith, 564582549, Smith@yopmail.com) -->
                   <span class="method-name">editParty</span>
                   <span class="parameters">(Smith, 564582549, Smith@yopmail.com)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;name&apos;]&quot;}
+  (Session info: chrome=120.0.6099.217)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88a9861332e7ec444efc2bbdc74417ad, findElement {using=name, value=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.217, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64220}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64220/devtoo..., se:cdpVersion: 120.0.6099.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 88a9861332e7ec444efc2bbdc74417ad
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.clear(Unknown Source)
+	at endtoend.Create_Edit_delete_waitlist.editParty(Create_Edit_delete_waitlist.java:135)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -208,10 +284,34 @@
                   </a> <!-- restoreParty(Smith, 564582549, Smith@yopmail.com) -->
                   <span class="method-name">restoreParty</span>
                   <span class="parameters">(Smith, 564582549, Smith@yopmail.com)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[text()=&apos;Robert&apos;]/span[text()=&apos;4568972842&apos;]&quot;}
+  (Session info: chrome=120.0.6099.217)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88a9861332e7ec444efc2bbdc74417ad, findElement {using=xpath, value=//td[text()=&apos;Robert&apos;]/span[text()=&apos;4568972842&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.217, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64220}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64220/devtoo..., se:cdpVersion: 120.0.6099.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 88a9861332e7ec444efc2bbdc74417ad
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at endtoend.Create_Edit_delete_waitlist.restoreParty(Create_Edit_delete_waitlist.java:123)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -256,6 +356,22 @@
                   </a> <!-- restoreParty(Richard, 654879879, Richard@yopmail.com) -->
                   <span class="method-name">restoreParty</span>
                   <span class="parameters">(Richard, 654879879, Richard@yopmail.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">endtoend.Create_Edit_delete_waitlist</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createWaitList(Smith, 564582549, Smith@yopmail.com)">
+                  </a> <!-- createWaitList(Smith, 564582549, Smith@yopmail.com) -->
+                  <span class="method-name">createWaitList</span>
+                  <span class="parameters">(Smith, 564582549, Smith@yopmail.com)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -320,44 +436,44 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'restoreParty')
-data.setCell(0, 2, 'endtoend.CreateEditDeleteEtaWaitlist')
-data.setCell(0, 3, 14214);
+data.setCell(0, 2, 'endtoend.Create_Edit_delete_waitlist')
+data.setCell(0, 3, 18065);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'createWaitList')
-data.setCell(1, 2, 'endtoend.Create_Edit_delete_waitlist')
-data.setCell(1, 3, 11064);
+data.setCell(1, 1, 'deleteParty')
+data.setCell(1, 2, 'endtoend.CreateEditDeleteEtaWaitlist')
+data.setCell(1, 3, 16568);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'restoreParty')
-data.setCell(2, 2, 'endtoend.Create_Edit_delete_waitlist')
-data.setCell(2, 3, 10903);
+data.setCell(2, 2, 'endtoend.CreateEditDeleteEtaWaitlist')
+data.setCell(2, 3, 13168);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'deleteParty')
-data.setCell(3, 2, 'endtoend.CreateEditDeleteEtaWaitlist')
-data.setCell(3, 3, 10702);
+data.setCell(3, 1, 'createWaitList')
+data.setCell(3, 2, 'endtoend.Create_Edit_delete_waitlist')
+data.setCell(3, 3, 12632);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'createWaitList')
 data.setCell(4, 2, 'endtoend.CreateEditDeleteEtaWaitlist')
-data.setCell(4, 3, 9984);
+data.setCell(4, 3, 10126);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'checkHistory')
-data.setCell(5, 2, 'endtoend.CreateEditDeleteEtaWaitlist')
-data.setCell(5, 3, 9487);
+data.setCell(5, 2, 'endtoend.Create_Edit_delete_waitlist')
+data.setCell(5, 3, 10102);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'deleteParty')
+data.setCell(6, 1, 'editParty')
 data.setCell(6, 2, 'endtoend.Create_Edit_delete_waitlist')
-data.setCell(6, 3, 7570);
+data.setCell(6, 3, 10088);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'editParty')
+data.setCell(7, 1, 'deleteParty')
 data.setCell(7, 2, 'endtoend.Create_Edit_delete_waitlist')
-data.setCell(7, 3, 4100);
+data.setCell(7, 3, 10082);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'editParty')
+data.setCell(8, 1, 'checkHistory')
 data.setCell(8, 2, 'endtoend.CreateEditDeleteEtaWaitlist')
-data.setCell(8, 3, 3712);
+data.setCell(8, 3, 8895);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'checkHistory')
-data.setCell(9, 2, 'endtoend.Create_Edit_delete_waitlist')
-data.setCell(9, 3, 3129);
+data.setCell(9, 1, 'editParty')
+data.setCell(9, 2, 'endtoend.CreateEditDeleteEtaWaitlist')
+data.setCell(9, 3, 3665);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -373,6 +489,30 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">restoreParty(Smith, 564582549, Smith@yopmail.com)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href='C:\Users\wbox42\eclipse-workspace\WaitListMe\target\surefire-reports\failure_screenshots\restoreParty_18_01_2024_11_10_43.png'> <img src='C:\Users\wbox42\eclipse-workspace\WaitListMe\target\surefire-reports\failure_screenshots\restoreParty_18_01_2024_11_10_43.png' height='100' width='100'/> </a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">deleteParty(Smith, 564582549, Smith@yopmail.com)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href='C:\Users\wbox42\eclipse-workspace\WaitListMe\target\surefire-reports\failure_screenshots\deleteParty_18_01_2024_11_10_15.png'> <img src='C:\Users\wbox42\eclipse-workspace\WaitListMe\target\surefire-reports\failure_screenshots\deleteParty_18_01_2024_11_10_15.png' height='100' width='100'/> </a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">checkHistory(Smith, 564582549, Smith@yopmail.com)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href='C:\Users\wbox42\eclipse-workspace\WaitListMe\target\surefire-reports\failure_screenshots\checkHistory_18_01_2024_11_10_25.png'> <img src='C:\Users\wbox42\eclipse-workspace\WaitListMe\target\surefire-reports\failure_screenshots\checkHistory_18_01_2024_11_10_25.png' height='100' width='100'/> </a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">editParty(Smith, 564582549, Smith@yopmail.com)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href='C:\Users\wbox42\eclipse-workspace\WaitListMe\target\surefire-reports\failure_screenshots\editParty_18_01_2024_11_10_53.png'> <img src='C:\Users\wbox42\eclipse-workspace\WaitListMe\target\surefire-reports\failure_screenshots\editParty_18_01_2024_11_10_53.png' height='100' width='100'/> </a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
@@ -395,58 +535,66 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">createWaitList(Smith, 564582549, Smith@yopmail.com)</span>
-                <span class="method-start">8206 ms</span>
+                <span class="method-start">10495 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">deleteParty(Smith, 564582549, Smith@yopmail.com)</span>
-                <span class="method-start">19284 ms</span>
+                <span class="method-start">23144 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">checkHistory(Smith, 564582549, Smith@yopmail.com)</span>
-                <span class="method-start">26857 ms</span>
+                <span class="method-start">33354 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">restoreParty(Smith, 564582549, Smith@yopmail.com)</span>
-                <span class="method-start">29989 ms</span>
+                <span class="method-start">43562 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">editParty(Smith, 564582549, Smith@yopmail.com)</span>
-                <span class="method-start">40894 ms</span>
+                <span class="method-start">61750 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">executeAfterTest</span>
-                <span class="method-start">44998 ms</span>
+                <span class="method-start">71957 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">endtoend.CreateEditDeleteEtaWaitlist</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">executeBeforeTest</span>
-                <span class="method-start">45465 ms</span>
+                <span class="method-start">72495 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">createWaitList(Richard, 654879879, Richard@yopmail.com)</span>
-                <span class="method-start">54111 ms</span>
+                <span class="method-start">80237 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deleteParty(Richard, 654879879, Richard@yopmail.com)</span>
-                <span class="method-start">64101 ms</span>
+                <span class="method-start">90374 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkHistory(Richard, 654879879, Richard@yopmail.com)</span>
-                <span class="method-start">74805 ms</span>
+                <span class="method-start">106945 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">restoreParty(Richard, 654879879, Richard@yopmail.com)</span>
-                <span class="method-start">84295 ms</span>
+                <span class="method-start">115842 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">editParty(Richard, 654879879, Richard@yopmail.com)</span>
-                <span class="method-start">98511 ms</span>
+                <span class="method-start">129012 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">executeAfterTest</span>
-                <span class="method-start">102228 ms</span>
+                <span class="method-start">132679 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
