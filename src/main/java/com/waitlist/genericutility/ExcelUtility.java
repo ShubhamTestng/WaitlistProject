@@ -40,6 +40,7 @@ public class ExcelUtility {
 		Cell cell = row.getCell(cellnum);
 		double value = cell.getNumericCellValue();
 		return value;
+		
 			
 	}
 }
