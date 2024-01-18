@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 
 public class BaseClass {
@@ -18,8 +18,8 @@ public class BaseClass {
 		return driver;
 	}
 	
-	@BeforeMethod	
-	public void executeBeforeClass() throws Throwable
+	@BeforeClass
+	public void executeBeforeTest() throws Throwable
 	{
 		
 		String browser = fileUtils.readFromPropertyFile("browser");
@@ -43,10 +43,19 @@ public class BaseClass {
 		
 	}
 	
-	@AfterMethod
-	public void executeAfterClass()
+		
+	@AfterClass
+	public void executeAfterTest()
 	{
 		driver.manage().window().minimize();
 		driver.quit();
 	}
+	
+	
+	
+	
+	
+	
+	
+	
 }

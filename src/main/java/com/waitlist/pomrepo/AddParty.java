@@ -49,6 +49,99 @@ public class AddParty {
 	@FindBy(xpath="//button[text()='next']")
 	WebElement nextButton;
 	
+	
+	@FindBy(xpath="//span[text()='ETA']")
+	WebElement ETAOption ;
+	
+	public WebElement getETAOption() {
+		return ETAOption;
+	}
+
+	public WebElement getETADate() {
+		return ETADate;
+	}
+
+	public WebElement getETATime() {
+		return ETATime;
+	}
+
+	public WebElement getETADuration() {
+		return ETADuration;
+	}
+
+	public WebElement getETAnext() {
+		return ETAnext;
+	}
+
+	public WebElement getETAclose() {
+		return ETAclose;
+	}
+
+	@FindBy(xpath="//input[@placeholder='Date Calender']")
+	WebElement ETADate;
+	
+	@FindBy(xpath="//input[@classvalue='stepTime']")
+	WebElement ETATime;  
+	
+	@FindBy(name = "estimatedDuration")
+	WebElement ETADuration;
+	
+	@FindBy(xpath="//button[text()='next']")
+	WebElement ETAnext;
+	
+	@FindBy(xpath="//span[text()='Choose Time']/../..//button[@class='close']")
+	WebElement ETAclose;
+	
+	@FindBy(xpath="//td[text()='8']")
+	WebElement ETAassignment;
+	
+	@FindBy(xpath="(//div[@class='input-group'])[2]")
+	WebElement ETAeditTime;
+	
+	public WebElement getETAeditTime() {
+		return ETAeditTime;
+	}
+
+	public WebElement getETAeditDuration() {
+		return ETAeditDuration;
+	}
+
+	public WebElement getETAReturntoWaitlist() {
+		return ETAReturntoWaitlist;
+	}
+
+	@FindBy(xpath="//div[@class='dropdown']/button[@type='button']")
+	WebElement ETAeditDuration;
+	
+	@FindBy(xpath="//button[text()='Return to Waitlist']")
+	WebElement ETAReturntoWaitlist;
+	
+	public WebElement getETAassignment() {
+		return ETAassignment;
+	}
+
+	public WebElement getClosebuttonatTime() {
+		return closebuttonatTime;
+	}
+
+	public WebElement getTimeDropdown() {
+		return timeDropdown;
+	}
+
+	@FindBy(xpath="//span[text()='Choose Time']/../..//button[@class='close']")
+	WebElement closebuttonatTime;
+	
+	@FindBy(name="waitTime")
+	WebElement timeDropdown;
+	
+	
+	@FindBy(xpath="//h5[text()='Assignments']/../..//button[@class='close']")
+	WebElement closebuttonatAssignment;
+	
+	public WebElement getClosebuttonatAssignment() {
+		return closebuttonatAssignment;
+	}
+
 	public WebElement getCloseButton() {
 		return closeButton;
 	}

@@ -1,42 +1,241 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-16T12:57:46 IST" name="Default suite" finished-at="2024-01-16T12:58:24 IST" duration-ms="37493">
+  <suite started-at="2024-01-17T18:08:52 IST" name="Suite" finished-at="2024-01-17T18:10:35 IST" duration-ms="102740">
     <groups>
     </groups>
-    <test started-at="2024-01-16T12:57:46 IST" name="Default test" finished-at="2024-01-16T12:58:24 IST" duration-ms="37493">
-      <class name="endtoend.CreateWaitList">
-        <test-method is-config="true" signature="executeBeforeClass()[pri:0, instance:endtoend.CreateWaitList@4c51bb7]" started-at="2024-01-16T12:57:47 IST" name="executeBeforeClass" finished-at="2024-01-16T12:57:56 IST" duration-ms="9502" status="PASS">
+    <test started-at="2024-01-17T18:08:52 IST" name="Test" finished-at="2024-01-17T18:10:35 IST" duration-ms="102740">
+      <class name="endtoend.CreateEditDeleteEtaWaitlist">
+        <test-method is-config="true" signature="executeBeforeTest()[pri:0, instance:endtoend.CreateEditDeleteEtaWaitlist@2c95ac9e]" started-at="2024-01-17T18:09:38 IST" name="executeBeforeTest" finished-at="2024-01-17T18:09:47 IST" duration-ms="8645" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- executeBeforeClass -->
-        <test-method signature="createWaitList(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:endtoend.CreateWaitList@4c51bb7]" started-at="2024-01-16T12:57:56 IST" name="createWaitList" data-provider="testDataProvider" finished-at="2024-01-16T12:58:24 IST" duration-ms="27531" status="PASS">
+        </test-method> <!-- executeBeforeTest -->
+        <test-method signature="createWaitList(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:endtoend.CreateEditDeleteEtaWaitlist@2c95ac9e]" started-at="2024-01-17T18:09:47 IST" name="createWaitList" data-provider="testDataProvider" finished-at="2024-01-17T18:09:56 IST" duration-ms="9984" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Sumit042]]>
+                <![CDATA[Richard]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[5326605699]]>
+                <![CDATA[654879879]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[2sGBJ@yopmail.com]]>
+                <![CDATA[Richard@yopmail.com]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createWaitList -->
-        <test-method is-config="true" signature="executeAfterClass()[pri:0, instance:endtoend.CreateWaitList@4c51bb7]" started-at="2024-01-16T12:58:24 IST" name="executeAfterClass" finished-at="2024-01-16T12:58:24 IST" duration-ms="383" status="PASS">
+        <test-method signature="deleteParty(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:endtoend.CreateEditDeleteEtaWaitlist@2c95ac9e]" started-at="2024-01-17T18:09:57 IST" name="deleteParty" data-provider="testDataProvider" finished-at="2024-01-17T18:10:07 IST" duration-ms="10702" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Richard]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[654879879]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Richard@yopmail.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- executeAfterClass -->
-      </class> <!-- endtoend.CreateWaitList -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- deleteParty -->
+        <test-method signature="checkHistory(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:endtoend.CreateEditDeleteEtaWaitlist@2c95ac9e]" started-at="2024-01-17T18:10:07 IST" name="checkHistory" data-provider="testDataProvider" finished-at="2024-01-17T18:10:17 IST" duration-ms="9487" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Richard]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[654879879]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Richard@yopmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkHistory -->
+        <test-method signature="restoreParty(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:endtoend.CreateEditDeleteEtaWaitlist@2c95ac9e]" started-at="2024-01-17T18:10:17 IST" name="restoreParty" data-provider="testDataProvider" finished-at="2024-01-17T18:10:31 IST" duration-ms="14214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Richard]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[654879879]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Richard@yopmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- restoreParty -->
+        <test-method signature="editParty(java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:endtoend.CreateEditDeleteEtaWaitlist@2c95ac9e]" started-at="2024-01-17T18:10:31 IST" name="editParty" data-provider="testDataProvider" finished-at="2024-01-17T18:10:35 IST" duration-ms="3712" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Richard]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[654879879]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Richard@yopmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editParty -->
+        <test-method is-config="true" signature="executeAfterTest()[pri:0, instance:endtoend.CreateEditDeleteEtaWaitlist@2c95ac9e]" started-at="2024-01-17T18:10:35 IST" name="executeAfterTest" finished-at="2024-01-17T18:10:35 IST" duration-ms="487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeAfterTest -->
+      </class> <!-- endtoend.CreateEditDeleteEtaWaitlist -->
+      <class name="endtoend.Create_Edit_delete_waitlist">
+        <test-method is-config="true" signature="executeBeforeTest()[pri:0, instance:endtoend.Create_Edit_delete_waitlist@19b30c92]" started-at="2024-01-17T18:08:52 IST" name="executeBeforeTest" finished-at="2024-01-17T18:09:01 IST" duration-ms="8184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeBeforeTest -->
+        <test-method signature="createWaitList(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:endtoend.Create_Edit_delete_waitlist@19b30c92]" started-at="2024-01-17T18:09:01 IST" name="createWaitList" data-provider="testDataProvider" finished-at="2024-01-17T18:09:12 IST" duration-ms="11064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[564582549]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Smith@yopmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createWaitList -->
+        <test-method signature="deleteParty(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:endtoend.Create_Edit_delete_waitlist@19b30c92]" started-at="2024-01-17T18:09:12 IST" name="deleteParty" data-provider="testDataProvider" finished-at="2024-01-17T18:09:19 IST" duration-ms="7570" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[564582549]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Smith@yopmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteParty -->
+        <test-method signature="checkHistory(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:endtoend.Create_Edit_delete_waitlist@19b30c92]" started-at="2024-01-17T18:09:19 IST" name="checkHistory" data-provider="testDataProvider" finished-at="2024-01-17T18:09:22 IST" duration-ms="3129" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[564582549]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Smith@yopmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkHistory -->
+        <test-method signature="restoreParty(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:endtoend.Create_Edit_delete_waitlist@19b30c92]" started-at="2024-01-17T18:09:22 IST" name="restoreParty" data-provider="testDataProvider" finished-at="2024-01-17T18:09:33 IST" duration-ms="10903" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[564582549]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Smith@yopmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- restoreParty -->
+        <test-method signature="editParty(java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:endtoend.Create_Edit_delete_waitlist@19b30c92]" started-at="2024-01-17T18:09:33 IST" name="editParty" data-provider="testDataProvider" finished-at="2024-01-17T18:09:37 IST" duration-ms="4100" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[564582549]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Smith@yopmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editParty -->
+        <test-method is-config="true" signature="executeAfterTest()[pri:0, instance:endtoend.Create_Edit_delete_waitlist@19b30c92]" started-at="2024-01-17T18:09:37 IST" name="executeAfterTest" finished-at="2024-01-17T18:09:38 IST" duration-ms="467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeAfterTest -->
+      </class> <!-- endtoend.Create_Edit_delete_waitlist -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

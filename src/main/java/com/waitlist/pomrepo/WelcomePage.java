@@ -13,7 +13,7 @@ public class WelcomePage {
 		PageFactory.initElements(driver, this);
 		}
 	
-	@FindBy(xpath="//*[@id=\"navigationarea\"]/div[2]/ul/li[1]/a")
+	@FindBy(xpath="//ul[@class='nav navbar-nav']//a[text()='Waitlist']")
 	WebElement waitlistLink;
 	
 	@FindBy(xpath="/html/body/div/header/div[2]/div[1]/div[1]/div[2]/div/nav/div[2]/ul/li[2]/a")

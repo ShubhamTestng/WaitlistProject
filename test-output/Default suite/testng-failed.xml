@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="endtoend.CreateWaitList">
+      <class name="endtoend.CreateEditDeleteEtaWaitlist">
         <methods>
-          <include name="executeBeforeClass"/>
-          <include name="Test"/>
-          <include name="executeAfterClass"/>
+          <include name="checkHistory" invocation-numbers="0"/>
+          <include name="editParty" invocation-numbers="0"/>
+          <include name="deleteParty" invocation-numbers="0"/>
+          <include name="executeBeforeTest"/>
+          <include name="executeAfterTest"/>
         </methods>
-      </class> <!-- endtoend.CreateWaitList -->
+      </class> <!-- endtoend.CreateEditDeleteEtaWaitlist -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

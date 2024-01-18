@@ -13,17 +13,16 @@ public class WaitList {
 		PageFactory.initElements(driver, this);
 		}
 	
-	@FindBy(xpath="//*[@id=\"app\"]/div/div/div[1]/div[3]/button[1]/i")
+	@FindBy(xpath="//button[@data-tip='Settings']")
 	WebElement settingsButton;
 
-	@FindBy(xpath="//*[@id=\"app\"]/div/div/div[1]/div[3]/button[2]/i")
+	@FindBy(xpath="//button[@data-tip='Show History']")
 	WebElement showHistoryButton;
 	
-	@FindBy(xpath="//*[@id=\"app\"]/div/div/div[1]/div[3]/button[3]/i")
+	@FindBy(xpath="//button[@data-tip='Add Party']")
 	WebElement addPartyButton;
 	
 	
-
 	public WebElement getAddPartyButton() {
 		return addPartyButton;
 	}
