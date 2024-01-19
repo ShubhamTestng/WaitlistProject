@@ -2,6 +2,7 @@ package com.waitlist.genericutility;
 
 
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -25,7 +26,6 @@ public class BaseClass {
 		String browser = fileUtils.readFromPropertyFile("browser");
 		if(browser.equals("chrome"))
 		{
-			
 			driver = new ChromeDriver();
 		}
 		else if(browser.equals("edge"))
@@ -40,13 +40,13 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		webDriverUtils.implicitWait(driver);
 		driver.get(fileUtils.readFromPropertyFile("url"));
-		
 	}
 	
 		
 	@AfterClass
 	public void executeAfterTest()
 	{
+				
 		driver.manage().window().minimize();
 		driver.quit();
 	}
@@ -54,8 +54,5 @@ public class BaseClass {
 	
 	
 	
-	
-	
-	
-	
+
 }

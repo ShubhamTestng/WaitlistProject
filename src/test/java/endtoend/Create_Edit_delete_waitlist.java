@@ -1,15 +1,9 @@
 package endtoend;
 
 
-import java.time.Duration;
-import java.util.Scanner;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -20,12 +14,11 @@ import com.waitlist.genericutility.FileUtility;
 import com.waitlist.genericutility.JavaScriptUtility;
 import com.waitlist.pomrepo.AddParty;
 import com.waitlist.pomrepo.EditParty;
+import com.waitlist.pomrepo.HistoryPage;
 import com.waitlist.pomrepo.LandingPage;
 import com.waitlist.pomrepo.LoginPage;
 import com.waitlist.pomrepo.WaitList;
 import com.waitlist.pomrepo.WelcomePage;
-
-import net.bytebuddy.utility.RandomString;
 
 
 public class Create_Edit_delete_waitlist extends BaseClass {
@@ -35,7 +28,7 @@ public class Create_Edit_delete_waitlist extends BaseClass {
 	public ExcelUtility excelUtil = new ExcelUtility();
 	public Logger log = LogManager.getLogger(Create_Edit_delete_waitlist.class);
 	JavaScriptUtility jse = new JavaScriptUtility();
-	public Scanner s = new Scanner(System.in);
+	
 	
 	
 	@Test(priority=1, dataProvider = "testDataProvider")
@@ -46,13 +39,11 @@ public class Create_Edit_delete_waitlist extends BaseClass {
 		LandingPage land = new LandingPage(driver);
 		LoginPage login = new LoginPage(driver);
 		AddParty addParty = new AddParty(driver);
-		
-		
-	land.getLoginButton().click();	
-	login.getEmailTetField().sendKeys(fileUtils.readFromPropertyFile("email"));
-	login.getPasswordTextField().sendKeys(fileUtils.readFromPropertyFile("password"));
-	login.getLoginButton().click();
-	welcome.getWaitlistLink().click();
+		land.getLoginButton().click();
+		login.getEmailTetField().sendKeys(fileUtils.readFromPropertyFile("email"));
+		login.getPasswordTextField().sendKeys(fileUtils.readFromPropertyFile("password"));
+		login.getLoginButton().click();
+		welcome.getWaitlistLink().click();
 //	waitList.getAddPartyButton().click();
 //	
 //	addParty.getNameTextField().sendKeys(name);
@@ -87,11 +78,11 @@ public class Create_Edit_delete_waitlist extends BaseClass {
 	
 	
 	@Test(priority=2, dataProvider = "testDataProvider")
-	public void deleteParty (String name,String Phone, String Email) throws Throwable {
+	public void deleteParty (String name,String Phone, String Email) {
 		
 		
 		EditParty editParty = new EditParty(driver);
-		driver.findElement(By.xpath("//td[text()='Robert']")).click();
+		editParty.getEditWaitlistPartylink().click();
 		
 		//Delete Party
 		editParty.getDeleteButton().click();
@@ -104,26 +95,22 @@ public class Create_Edit_delete_waitlist extends BaseClass {
 	@Test(priority=3, dataProvider = "testDataProvider")
 	public void checkHistory(String name,String Phone, String Email) {
 		
-				
+		HistoryPage historyPage = new HistoryPage(driver);		
 		WaitList waitList = new WaitList(driver);
 		//Check History After Deleting
-		waitList.getShowHistoryButton().click();
-		if(driver.findElement(By.xpath("//span[text()='Robert']")).isDisplayed()) {
-			System.out.println("Present");
-			//restoring the party
-			driver.findElement(By.xpath("//span[text()='Robert']/../../td[7]/div[@class='visual-custom-class style__VisualButtons-ov6qif-1 izPKcx']")).click();
-		}
+		waitList.getShowHistoryButton().click(); 
+		historyPage.getWaitlistpartyHistory().click();
+		
 	}
 	
 	@Test(priority=4, dataProvider = "testDataProvider")
-	public void restoreParty(String name,String Phone, String Email) {
+	public void restoreParty(String name,String Phone, String Email) throws Throwable {
 		
+		WelcomePage welcomePage = new WelcomePage(driver);
+		EditParty editParty = new EditParty(driver);
 		//Check party is restored
-		driver.findElement(By.xpath("//a[text()='Waitlist']")).click();
-		if(driver.findElement(By.xpath("//td[text()='Robert']")).isDisplayed()) {
-		System.out.println("Present");
-		driver.findElement(By.xpath("//td[text()='Robert']")).click();
-		} 
+		welcomePage.getWaitlistLink2().click();
+		editParty.getEditWaitlistPartylink().click();
 	}
 	
 	
