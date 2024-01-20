@@ -9,8 +9,10 @@
     <classes>
       <class name="endtoend.Create_Edit_delete_waitlist">
         <methods>
+          <include name="deleteParty" invocation-numbers="0"/>
           <include name="editParty" invocation-numbers="0"/>
           <include name="executeBeforeTest"/>
+          <include name="checkHistory" invocation-numbers="0"/>
           <include name="executeAfterTest"/>
         </methods>
       </class> <!-- endtoend.Create_Edit_delete_waitlist -->

@@ -110,7 +110,7 @@ public class Create_Edit_delete_waitlist extends BaseClass {
 		EditParty editParty = new EditParty(driver);
 		//Check party is restored
 		welcomePage.getWaitlistLink2().click();
-		editParty.getEditWaitlistPartylink().click();
+		
 	}
 	
 	
@@ -118,7 +118,7 @@ public class Create_Edit_delete_waitlist extends BaseClass {
 	public void editParty(String name,String Phone, String Email) {
 				
 		EditParty editParty = new EditParty(driver);
-			
+		editParty.getEditWaitlistPartylink().click();	
 		editParty.getNameTextField().clear();
 		editParty.getNameTextField().sendKeys("Sumit");
 		editParty.getPhoneTextField().clear();

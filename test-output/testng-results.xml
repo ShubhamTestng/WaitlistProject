@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[<a href='C:\Users\wbox42\eclipse-workspace\WaitListMeSynchronised\target\surefire-reports\failure_screenshots\editParty_19_01_2024_05_04_05.png'> <img src='C:\Users\wbox42\eclipse-workspace\WaitListMeSynchronised\target\surefire-reports\failure_screenshots\editParty_19_01_2024_05_04_05.png' height='100' width='100'/> </a>]]>
-    </line>
   </reporter-output>
-  <suite started-at="2024-01-19T17:03:26 IST" name="Suite" finished-at="2024-01-19T17:04:49 IST" duration-ms="82637">
+  <suite started-at="2024-01-20T11:22:11 IST" name="Suite" finished-at="2024-01-20T11:23:59 IST" duration-ms="107437">
     <groups>
     </groups>
-    <test started-at="2024-01-19T17:03:26 IST" name="Test" finished-at="2024-01-19T17:04:49 IST" duration-ms="82637">
+    <test started-at="2024-01-20T11:22:11 IST" name="Test" finished-at="2024-01-20T11:23:59 IST" duration-ms="107437">
       <class name="endtoend.CreateEditDeleteEtaWaitlist">
-        <test-method is-config="true" signature="executeBeforeTest()[pri:0, instance:endtoend.CreateEditDeleteEtaWaitlist@4e4efc1b]" started-at="2024-01-19T17:04:06 IST" name="executeBeforeTest" finished-at="2024-01-19T17:04:13 IST" duration-ms="7338" status="PASS">
+        <test-method is-config="true" signature="executeBeforeTest()[pri:0, instance:endtoend.CreateEditDeleteEtaWaitlist@4e4efc1b]" started-at="2024-01-20T11:23:12 IST" name="executeBeforeTest" finished-at="2024-01-20T11:23:19 IST" duration-ms="7322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeBeforeTest -->
-        <test-method signature="createWaitList(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:endtoend.CreateEditDeleteEtaWaitlist@4e4efc1b]" started-at="2024-01-19T17:04:13 IST" name="createWaitList" data-provider="testDataProvider" finished-at="2024-01-19T17:04:23 IST" duration-ms="9952" status="PASS">
+        <test-method signature="createWaitList(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:endtoend.CreateEditDeleteEtaWaitlist@4e4efc1b]" started-at="2024-01-20T11:23:19 IST" name="createWaitList" data-provider="testDataProvider" finished-at="2024-01-20T11:23:32 IST" duration-ms="12825" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,7 +32,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createWaitList -->
-        <test-method signature="deleteParty(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:endtoend.CreateEditDeleteEtaWaitlist@4e4efc1b]" started-at="2024-01-19T17:04:23 IST" name="deleteParty" data-provider="testDataProvider" finished-at="2024-01-19T17:04:28 IST" duration-ms="4877" status="PASS">
+        <test-method signature="deleteParty(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:endtoend.CreateEditDeleteEtaWaitlist@4e4efc1b]" started-at="2024-01-20T11:23:32 IST" name="deleteParty" data-provider="testDataProvider" finished-at="2024-01-20T11:23:37 IST" duration-ms="4610" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteParty -->
-        <test-method signature="checkHistory(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:endtoend.CreateEditDeleteEtaWaitlist@4e4efc1b]" started-at="2024-01-19T17:04:28 IST" name="checkHistory" data-provider="testDataProvider" finished-at="2024-01-19T17:04:33 IST" duration-ms="4873" status="PASS">
+        <test-method signature="checkHistory(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:endtoend.CreateEditDeleteEtaWaitlist@4e4efc1b]" started-at="2024-01-20T11:23:37 IST" name="checkHistory" data-provider="testDataProvider" finished-at="2024-01-20T11:23:43 IST" duration-ms="6228" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -77,7 +74,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkHistory -->
-        <test-method signature="restoreParty(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:endtoend.CreateEditDeleteEtaWaitlist@4e4efc1b]" started-at="2024-01-19T17:04:33 IST" name="restoreParty" data-provider="testDataProvider" finished-at="2024-01-19T17:04:40 IST" duration-ms="7111" status="PASS">
+        <test-method signature="restoreParty(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:endtoend.CreateEditDeleteEtaWaitlist@4e4efc1b]" started-at="2024-01-20T11:23:43 IST" name="restoreParty" data-provider="testDataProvider" finished-at="2024-01-20T11:23:49 IST" duration-ms="6261" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -98,7 +95,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- restoreParty -->
-        <test-method signature="editParty(java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:endtoend.CreateEditDeleteEtaWaitlist@4e4efc1b]" started-at="2024-01-19T17:04:40 IST" name="editParty" data-provider="testDataProvider" finished-at="2024-01-19T17:04:49 IST" duration-ms="8836" status="PASS">
+        <test-method signature="editParty(java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:endtoend.CreateEditDeleteEtaWaitlist@4e4efc1b]" started-at="2024-01-20T11:23:49 IST" name="editParty" data-provider="testDataProvider" finished-at="2024-01-20T11:23:58 IST" duration-ms="9040" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,17 +116,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editParty -->
-        <test-method is-config="true" signature="executeAfterTest()[pri:0, instance:endtoend.CreateEditDeleteEtaWaitlist@4e4efc1b]" started-at="2024-01-19T17:04:49 IST" name="executeAfterTest" finished-at="2024-01-19T17:04:49 IST" duration-ms="471" status="PASS">
+        <test-method is-config="true" signature="executeAfterTest()[pri:0, instance:endtoend.CreateEditDeleteEtaWaitlist@4e4efc1b]" started-at="2024-01-20T11:23:58 IST" name="executeAfterTest" finished-at="2024-01-20T11:23:59 IST" duration-ms="446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeAfterTest -->
       </class> <!-- endtoend.CreateEditDeleteEtaWaitlist -->
       <class name="endtoend.Create_Edit_delete_waitlist">
-        <test-method is-config="true" signature="executeBeforeTest()[pri:0, instance:endtoend.Create_Edit_delete_waitlist@1a69561c]" started-at="2024-01-19T17:03:26 IST" name="executeBeforeTest" finished-at="2024-01-19T17:03:34 IST" duration-ms="7812" status="PASS">
+        <test-method is-config="true" signature="executeBeforeTest()[pri:0, instance:endtoend.Create_Edit_delete_waitlist@1a69561c]" started-at="2024-01-20T11:22:11 IST" name="executeBeforeTest" finished-at="2024-01-20T11:22:22 IST" duration-ms="10233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeBeforeTest -->
-        <test-method signature="createWaitList(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:endtoend.Create_Edit_delete_waitlist@1a69561c]" started-at="2024-01-19T17:03:34 IST" name="createWaitList" data-provider="testDataProvider" finished-at="2024-01-19T17:03:44 IST" duration-ms="10029" status="PASS">
+        <test-method signature="createWaitList(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:endtoend.Create_Edit_delete_waitlist@1a69561c]" started-at="2024-01-20T11:22:22 IST" name="createWaitList" data-provider="testDataProvider" finished-at="2024-01-20T11:22:39 IST" duration-ms="16957" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -150,7 +147,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createWaitList -->
-        <test-method signature="deleteParty(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:endtoend.Create_Edit_delete_waitlist@1a69561c]" started-at="2024-01-19T17:03:44 IST" name="deleteParty" data-provider="testDataProvider" finished-at="2024-01-19T17:03:49 IST" duration-ms="4247" status="PASS">
+        <test-method signature="deleteParty(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:endtoend.Create_Edit_delete_waitlist@1a69561c]" started-at="2024-01-20T11:22:39 IST" name="deleteParty" data-provider="testDataProvider" finished-at="2024-01-20T11:22:51 IST" duration-ms="12498" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -171,7 +168,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteParty -->
-        <test-method signature="checkHistory(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:endtoend.Create_Edit_delete_waitlist@1a69561c]" started-at="2024-01-19T17:03:49 IST" name="checkHistory" data-provider="testDataProvider" finished-at="2024-01-19T17:03:52 IST" duration-ms="3071" status="PASS">
+        <test-method signature="checkHistory(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:endtoend.Create_Edit_delete_waitlist@1a69561c]" started-at="2024-01-20T11:22:51 IST" name="checkHistory" data-provider="testDataProvider" finished-at="2024-01-20T11:22:55 IST" duration-ms="4206" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -192,7 +189,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkHistory -->
-        <test-method signature="restoreParty(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:endtoend.Create_Edit_delete_waitlist@1a69561c]" started-at="2024-01-19T17:03:52 IST" name="restoreParty" data-provider="testDataProvider" finished-at="2024-01-19T17:04:00 IST" duration-ms="8331" status="PASS">
+        <test-method signature="restoreParty(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:endtoend.Create_Edit_delete_waitlist@1a69561c]" started-at="2024-01-20T11:22:55 IST" name="restoreParty" data-provider="testDataProvider" finished-at="2024-01-20T11:23:04 IST" duration-ms="8903" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -213,7 +210,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- restoreParty -->
-        <test-method signature="editParty(java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:endtoend.Create_Edit_delete_waitlist@1a69561c]" started-at="2024-01-19T17:04:00 IST" name="editParty" data-provider="testDataProvider" finished-at="2024-01-19T17:04:05 IST" duration-ms="4885" status="FAIL">
+        <test-method signature="editParty(java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:endtoend.Create_Edit_delete_waitlist@1a69561c]" started-at="2024-01-20T11:23:04 IST" name="editParty" data-provider="testDataProvider" finished-at="2024-01-20T11:23:12 IST" duration-ms="7370" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -231,89 +228,10 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found
-  (Session info: chrome=120.0.6099.225)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [531b4c55d9a62f65f1795860d0659e3f, clickElement {id=E4F9AC55386CCA412D47191C1E3565E0_element_302}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59397}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59397/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (531b4c55d9a62f65f1795860d0659e3f)] -> xpath: //tr[@id='assign_9']]
-Session ID: 531b4c55d9a62f65f1795860d0659e3f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=120.0.6099.225)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [531b4c55d9a62f65f1795860d0659e3f, clickElement {id=E4F9AC55386CCA412D47191C1E3565E0_element_302}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59397}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59397/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (531b4c55d9a62f65f1795860d0659e3f)] -> xpath: //tr[@id='assign_9']]
-Session ID: 531b4c55d9a62f65f1795860d0659e3f
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
-at endtoend.Create_Edit_delete_waitlist.editParty(Create_Edit_delete_waitlist.java:133)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
-            <line>
-              <![CDATA[<a href='C:\Users\wbox42\eclipse-workspace\WaitListMeSynchronised\target\surefire-reports\failure_screenshots\editParty_19_01_2024_05_04_05.png'> <img src='C:\Users\wbox42\eclipse-workspace\WaitListMeSynchronised\target\surefire-reports\failure_screenshots\editParty_19_01_2024_05_04_05.png' height='100' width='100'/> </a>]]>
-            </line>
           </reporter-output>
         </test-method> <!-- editParty -->
-        <test-method is-config="true" signature="executeAfterTest()[pri:0, instance:endtoend.Create_Edit_delete_waitlist@1a69561c]" started-at="2024-01-19T17:04:05 IST" name="executeAfterTest" finished-at="2024-01-19T17:04:06 IST" duration-ms="583" status="PASS">
+        <test-method is-config="true" signature="executeAfterTest()[pri:0, instance:endtoend.Create_Edit_delete_waitlist@1a69561c]" started-at="2024-01-20T11:23:12 IST" name="executeAfterTest" finished-at="2024-01-20T11:23:12 IST" duration-ms="442" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeAfterTest -->
