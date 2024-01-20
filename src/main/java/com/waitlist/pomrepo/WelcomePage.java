@@ -19,12 +19,17 @@ public class WelcomePage {
 		PageFactory.initElements(driver, this);
 		}
 	
-	public void synchronised(By locator, WebElement element) {
+	public void synchronised(By locator, WebElement element)  {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		wait.until(ExpectedConditions.elementToBeClickable(element));	
 		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-	}
+		try {
+		Thread.sleep(1000); }
+		catch (InterruptedException e) {
+		e.printStackTrace();	
+		}
+		}
 	
 	
 	@FindBy(xpath="//ul[@class='nav navbar-nav']//a[text()='Waitlist']")
