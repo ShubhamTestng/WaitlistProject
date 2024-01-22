@@ -40,7 +40,9 @@ public class Create_Edit_delete_waitlist extends BaseClass {
 		LoginPage login = new LoginPage(driver);
 		AddParty addParty = new AddParty(driver);
 		land.getLoginButton().click();
+		log.info("Clicked login button");
 		login.getEmailTetField().sendKeys(fileUtils.readFromPropertyFile("email"));
+		log.info("entered email");
 		login.getPasswordTextField().sendKeys(fileUtils.readFromPropertyFile("password"));
 		login.getLoginButton().click();
 		welcome.getWaitlistLink().click();
@@ -149,7 +151,7 @@ public class Create_Edit_delete_waitlist extends BaseClass {
     public Object[][] testData() {
        
         return new Object[][]{
-        {"Smith", "564582549","Smith@yopmail.com" }
+        {"Robert", "564582549","Smith@yopmail.com" }
                 
         };
     }

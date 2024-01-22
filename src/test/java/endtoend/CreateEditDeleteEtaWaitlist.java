@@ -89,17 +89,11 @@ public class CreateEditDeleteEtaWaitlist extends BaseClass {
 		
 		WaitList waitList = new WaitList(driver);
 		EditParty editParty = new EditParty(driver);
-//		Thread.sleep(5000);
 		
 		waitList.getWaitListparty().click();
-//		Thread.sleep(5000);
-		//Delete Party
 		editParty.getDeleteButton().click();
-//		Thread.sleep(2000);
 		editParty.getNoAction().click();
-//		Thread.sleep(5000);
 		editParty.getDeleteButton().click();
-//		Thread.sleep(2000);
 		editParty.getYesAction().click();
 	}
 	
@@ -107,16 +101,15 @@ public class CreateEditDeleteEtaWaitlist extends BaseClass {
 	@Test(priority=3, dataProvider = "testDataProvider")
 	public void checkHistory(String name,String Phone, String Email) throws Throwable {
 		HistoryPage historyPage = new HistoryPage(driver);
-		
 		AddParty addParty = new AddParty(driver);		
 		WaitList waitList = new WaitList(driver);
+		
+		
 		//Check History After Deleting
 		waitList.getShowHistoryButton().click();
-			//restoring the party
-		Thread.sleep(3000);
-		historyPage.getWaitlistpartyHistory2().click();
 		
-//		Thread.sleep(3000);
+		//restoring the party
+		historyPage.getWaitlistpartyHistory2().click();
 		addParty.getETAReturntoWaitlist().click();
 		
 	}
@@ -134,14 +127,14 @@ public class CreateEditDeleteEtaWaitlist extends BaseClass {
 	
 	@Test(priority=5, dataProvider = "testDataProvider")
 	public void editParty(String name,String Phone, String Email) throws Throwable{
-		Thread.sleep(3000);
-		HistoryPage historyPage= new HistoryPage(driver);
 		
-		historyPage.getWaitlistpartyHistory3().click();
+		HistoryPage historyPage= new HistoryPage(driver);
 		EditParty editParty = new EditParty(driver);
+		historyPage.getWaitlistpartyHistory3().click();
+		
 			
 		editParty.getNameTextField().clear();
-		editParty.getNameTextField().sendKeys("Sumit");
+		editParty.getNameTextField().sendKeys("Richard");
 		editParty.getPhoneTextField().clear();
 		editParty.getPhoneTextField().sendKeys("123456");
 		editParty.getEmailTextField().clear();
