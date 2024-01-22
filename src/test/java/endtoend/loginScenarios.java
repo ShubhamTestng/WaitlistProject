@@ -1,7 +1,11 @@
 package endtoend;
 
 import java.io.IOException;
+import java.time.Duration;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.waitlist.genericutility.BaseClass;
@@ -17,7 +21,6 @@ public class loginScenarios extends BaseClass {
 		
 		LandingPage landingPage = new LandingPage(driver);
 		LoginPage login = new LoginPage(driver);
-		
 		landingPage.getLoginButton().click();
 		login.getEmailTetField().sendKeys(fileUtils.readFromPropertyFile("email"));
 		login.getPasswordTextField().sendKeys(fileUtils.readFromPropertyFile("password"));
