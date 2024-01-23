@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -91,13 +92,16 @@ public class ExtentReportListener implements ITestListener {
 
 	public synchronized void onTestFailure(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " failed!"));
-//		try {
-////			test.get().fail(result.getThrowable(),
-////					MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot()).build());
-//		} catch (IOException e) {
-//			System.err
-//					.println("Exception thrown while updating test fail status " + Arrays.toString(e.getStackTrace()));
-//		}
+		
+		try {
+            // Capture failure reason and include it in the Extent Report
+            String failureReason = result.getThrowable() != null ? result.getThrowable().getMessage() : "Unknown";
+            test.get().fail("Test failed. Failure Reason: " + failureReason);
+        } catch (Exception e) {
+            System.err.println("Exception thrown while updating test fail status " + Arrays.toString(e.getStackTrace()));
+        }
+		
+		test.get().fail("Test failed");
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 

@@ -1,2 +1,3 @@
-endtoend\CreateWaitList.class
-endtoend\LoginScenarios.class
+endtoend\CreateEditDeleteEtaWaitlist.class
+endtoend\Create_Edit_delete_waitlist.class
+endtoend\loginScenarios.class

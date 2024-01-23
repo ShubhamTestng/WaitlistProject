@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="endtoend.Create_Edit_delete_waitlist" class="method navigator-link" hash-for-method="createWaitList(Robert, 564582549, Smith@yopmail.com)">createWaitList(Robert, 564582549, Smith@yopmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +118,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="endtoend.Create_Edit_delete_waitlist" class="method navigator-link" hash-for-method="checkHistory(Robert, 564582549, Smith@yopmail.com)">checkHistory(Robert, 564582549, Smith@yopmail.com)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="endtoend.CreateEditDeleteEtaWaitlist" class="method navigator-link" hash-for-method="checkHistory(Richard, 654879879, Richard@yopmail.com)">checkHistory(Richard, 654879879, Richard@yopmail.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="endtoend.CreateEditDeleteEtaWaitlist" class="method navigator-link" hash-for-method="checkHistory(Richard, 654879879, Richard@yopmail.com)">checkHistory(Richard, 654879879, Richard@yopmail.com)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="endtoend.Create_Edit_delete_waitlist" class="method navigator-link" hash-for-method="checkHistory(Robert, 564582549, Smith@yopmail.com)">checkHistory(Robert, 564582549, Smith@yopmail.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -119,17 +133,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="endtoend.Create_Edit_delete_waitlist" class="method navigator-link" hash-for-method="createWaitList(Robert, 564582549, Smith@yopmail.com)">createWaitList(Robert, 564582549, Smith@yopmail.com)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="endtoend.Create_Edit_delete_waitlist" class="method navigator-link" hash-for-method="deleteParty(Robert, 564582549, Smith@yopmail.com)">deleteParty(Robert, 564582549, Smith@yopmail.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="endtoend.CreateEditDeleteEtaWaitlist" class="method navigator-link" hash-for-method="deleteParty(Richard, 654879879, Richard@yopmail.com)">deleteParty(Richard, 654879879, Richard@yopmail.com)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="endtoend.Create_Edit_delete_waitlist" class="method navigator-link" hash-for-method="deleteParty(Robert, 564582549, Smith@yopmail.com)">deleteParty(Robert, 564582549, Smith@yopmail.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -144,12 +153,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="endtoend.Create_Edit_delete_waitlist" class="method navigator-link" hash-for-method="restoreParty(Robert, 564582549, Smith@yopmail.com)">restoreParty(Robert, 564582549, Smith@yopmail.com)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="endtoend.CreateEditDeleteEtaWaitlist" class="method navigator-link" hash-for-method="restoreParty(Richard, 654879879, Richard@yopmail.com)">restoreParty(Richard, 654879879, Richard@yopmail.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="endtoend.CreateEditDeleteEtaWaitlist" class="method navigator-link" hash-for-method="restoreParty(Richard, 654879879, Richard@yopmail.com)">restoreParty(Richard, 654879879, Richard@yopmail.com)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="endtoend.Create_Edit_delete_waitlist" class="method navigator-link" hash-for-method="restoreParty(Robert, 564582549, Smith@yopmail.com)">restoreParty(Robert, 564582549, Smith@yopmail.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -164,6 +173,27 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">endtoend.Create_Edit_delete_waitlist</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createWaitList(Robert, 564582549, Smith@yopmail.com)">
+                  </a> <!-- createWaitList(Robert, 564582549, Smith@yopmail.com) -->
+                  <span class="method-name">createWaitList</span>
+                  <span class="parameters">(Robert, 564582549, Smith@yopmail.com)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at endtoend.Create_Edit_delete_waitlist.createWaitList(Create_Edit_delete_waitlist.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -223,14 +253,6 @@
                   <a name="checkHistory(Robert, 564582549, Smith@yopmail.com)">
                   </a> <!-- checkHistory(Robert, 564582549, Smith@yopmail.com) -->
                   <span class="method-name">checkHistory</span>
-                  <span class="parameters">(Robert, 564582549, Smith@yopmail.com)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createWaitList(Robert, 564582549, Smith@yopmail.com)">
-                  </a> <!-- createWaitList(Robert, 564582549, Smith@yopmail.com) -->
-                  <span class="method-name">createWaitList</span>
                   <span class="parameters">(Robert, 564582549, Smith@yopmail.com)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -319,45 +341,45 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'deleteParty')
+data.setCell(0, 1, 'editParty')
 data.setCell(0, 2, 'endtoend.CreateEditDeleteEtaWaitlist')
-data.setCell(0, 3, 45955);
+data.setCell(0, 3, 30680);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'editParty')
-data.setCell(1, 2, 'endtoend.CreateEditDeleteEtaWaitlist')
-data.setCell(1, 3, 32500);
+data.setCell(1, 2, 'endtoend.Create_Edit_delete_waitlist')
+data.setCell(1, 3, 25049);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'editParty')
+data.setCell(2, 1, 'createWaitList')
 data.setCell(2, 2, 'endtoend.Create_Edit_delete_waitlist')
-data.setCell(2, 3, 26370);
+data.setCell(2, 3, 18956);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'createWaitList')
+data.setCell(3, 1, 'deleteParty')
 data.setCell(3, 2, 'endtoend.Create_Edit_delete_waitlist')
-data.setCell(3, 3, 15470);
+data.setCell(3, 3, 17128);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'createWaitList')
 data.setCell(4, 2, 'endtoend.CreateEditDeleteEtaWaitlist')
-data.setCell(4, 3, 15430);
+data.setCell(4, 3, 16468);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'checkHistory')
+data.setCell(5, 1, 'deleteParty')
 data.setCell(5, 2, 'endtoend.CreateEditDeleteEtaWaitlist')
-data.setCell(5, 3, 11596);
+data.setCell(5, 3, 13733);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'deleteParty')
+data.setCell(6, 1, 'restoreParty')
 data.setCell(6, 2, 'endtoend.Create_Edit_delete_waitlist')
-data.setCell(6, 3, 11157);
+data.setCell(6, 3, 9685);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'restoreParty')
+data.setCell(7, 1, 'checkHistory')
 data.setCell(7, 2, 'endtoend.CreateEditDeleteEtaWaitlist')
-data.setCell(7, 3, 7415);
+data.setCell(7, 3, 8421);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'restoreParty')
-data.setCell(8, 2, 'endtoend.Create_Edit_delete_waitlist')
-data.setCell(8, 3, 6916);
+data.setCell(8, 2, 'endtoend.CreateEditDeleteEtaWaitlist')
+data.setCell(8, 3, 8273);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'checkHistory')
 data.setCell(9, 2, 'endtoend.Create_Edit_delete_waitlist')
-data.setCell(9, 3, 4358);
+data.setCell(9, 3, 4675);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -373,6 +395,12 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createWaitList(Robert, 564582549, Smith@yopmail.com)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href='C:\Users\wbox42\eclipse-workspace\WaitListMeSynchronised\target\surefire-reports\failure_screenshots\createWaitList_22_01_2024_05_40_57.png'> <img src='C:\Users\wbox42\eclipse-workspace\WaitListMeSynchronised\target\surefire-reports\failure_screenshots\createWaitList_22_01_2024_05_40_57.png' height='100' width='100'/> </a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
@@ -394,59 +422,61 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">createWaitList(Robert, 564582549, Smith@yopmail.com)</span>
-                <span class="method-start">8131 ms</span>
+                <span class="method-start">8999 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deleteParty(Robert, 564582549, Smith@yopmail.com)</span>
-                <span class="method-start">23618 ms</span>
+                <span class="method-start">28098 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkHistory(Robert, 564582549, Smith@yopmail.com)</span>
-                <span class="method-start">34778 ms</span>
+                <span class="method-start">45230 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">restoreParty(Robert, 564582549, Smith@yopmail.com)</span>
-                <span class="method-start">39141 ms</span>
+                <span class="method-start">49910 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">editParty(Robert, 564582549, Smith@yopmail.com)</span>
-                <span class="method-start">46062 ms</span>
+                <span class="method-start">59600 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">executeAfterTest</span>
-                <span class="method-start">72435 ms</span>
+                <span class="method-start">84651 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">endtoend.CreateEditDeleteEtaWaitlist</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">executeBeforeTest</span>
-                <span class="method-start">72889 ms</span>
+                <span class="method-start">85141 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">createWaitList(Richard, 654879879, Richard@yopmail.com)</span>
-                <span class="method-start">79749 ms</span>
+                <span class="method-start">92667 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deleteParty(Richard, 654879879, Richard@yopmail.com)</span>
-                <span class="method-start">95184 ms</span>
+                <span class="method-start">109144 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkHistory(Richard, 654879879, Richard@yopmail.com)</span>
-                <span class="method-start">141141 ms</span>
+                <span class="method-start">122879 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">restoreParty(Richard, 654879879, Richard@yopmail.com)</span>
-                <span class="method-start">152740 ms</span>
+                <span class="method-start">131306 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">editParty(Richard, 654879879, Richard@yopmail.com)</span>
-                <span class="method-start">160162 ms</span>
+                <span class="method-start">139582 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">executeAfterTest</span>
-                <span class="method-start">192666 ms</span>
+                <span class="method-start">170264 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

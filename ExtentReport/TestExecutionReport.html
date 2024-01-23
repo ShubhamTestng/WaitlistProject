@@ -47,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jan 22, 2024 11:27:13 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Jan 22, 2024 06:29:11 PM</span>
 				</a>
 			</li>
 			<li>
@@ -72,7 +72,7 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+											<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -87,7 +87,6 @@
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>Suite</a></li>
 					<li><a href='#'>Create_Edit_delete_waitlist</a></li>
-					<li><a href='#'>CreateEditDeleteEtaWaitlist</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -135,10 +134,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>10</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -150,10 +149,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>10</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>4</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -168,17 +167,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>createWaitList</span>
-						<span class='test-time'>Jan 22, 2024 11:27:22 AM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Jan 22, 2024 06:29:21 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 22, 2024 11:27:22 AM</span>
-	<span class='label end-time'>Jan 22, 2024 11:27:38 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+470ms</span>
+	<span class='label start-time'>Jan 22, 2024 06:29:21 PM</span>
+	<span class='label end-time'>Jan 22, 2024 06:30:02 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 41s+77ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -196,370 +195,33 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:27:38 AM</td>
-					<td class='step-details'>Test passed</td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>6:30:02 PM</td>
+					<td class='step-details'>Test failed. Failure Reason: Expected condition failed: waiting for visibility of element located by By.xpath: //ul[@class='nav navbar-nav']//a[text()='Waitlist'] (tried for 30 second(s) with 500 milliseconds interval)</td>
 				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
-					<div class='test-heading'>
-						<span class='test-name'>deleteParty</span>
-						<span class='test-time'>Jan 22, 2024 11:27:38 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jan 22, 2024 11:27:38 AM</span>
-	<span class='label end-time'>Jan 22, 2024 11:27:49 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+157ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Suite</span>
-				<span class='category label white-text'>Create_Edit_delete_waitlist</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>6:30:02 PM</td>
+					<td class='step-details'>Test failed</td>
 				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:27:49 AM</td>
-					<td class='step-details'>Test passed</td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>6:30:02 PM</td>
+					<td class='step-details'>Test failed. Failure Reason: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f19485f7480e6761f825a5127adb65d2, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50729}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50729/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f19485f7480e6761f825a5127adb65d2</td>
 				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>checkHistory</span>
-						<span class='test-time'>Jan 22, 2024 11:27:49 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jan 22, 2024 11:27:49 AM</span>
-	<span class='label end-time'>Jan 22, 2024 11:27:53 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+358ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Suite</span>
-				<span class='category label white-text'>Create_Edit_delete_waitlist</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:27:53 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
-					<div class='test-heading'>
-						<span class='test-name'>restoreParty</span>
-						<span class='test-time'>Jan 22, 2024 11:27:53 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jan 22, 2024 11:27:53 AM</span>
-	<span class='label end-time'>Jan 22, 2024 11:28:00 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+916ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Suite</span>
-				<span class='category label white-text'>Create_Edit_delete_waitlist</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:28:00 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'>editParty</span>
-						<span class='test-time'>Jan 22, 2024 11:28:00 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jan 22, 2024 11:28:00 AM</span>
-	<span class='label end-time'>Jan 22, 2024 11:28:27 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 26s+370ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Suite</span>
-				<span class='category label white-text'>Create_Edit_delete_waitlist</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:28:27 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
-					<div class='test-heading'>
-						<span class='test-name'>createWaitList</span>
-						<span class='test-time'>Jan 22, 2024 11:28:34 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jan 22, 2024 11:28:34 AM</span>
-	<span class='label end-time'>Jan 22, 2024 11:28:49 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+430ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Suite</span>
-				<span class='category label white-text'>CreateEditDeleteEtaWaitlist</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:28:49 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
-					<div class='test-heading'>
-						<span class='test-name'>deleteParty</span>
-						<span class='test-time'>Jan 22, 2024 11:28:49 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jan 22, 2024 11:28:49 AM</span>
-	<span class='label end-time'>Jan 22, 2024 11:29:35 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 45s+955ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Suite</span>
-				<span class='category label white-text'>CreateEditDeleteEtaWaitlist</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:29:35 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
-					<div class='test-heading'>
-						<span class='test-name'>checkHistory</span>
-						<span class='test-time'>Jan 22, 2024 11:29:35 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jan 22, 2024 11:29:35 AM</span>
-	<span class='label end-time'>Jan 22, 2024 11:29:47 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+596ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Suite</span>
-				<span class='category label white-text'>CreateEditDeleteEtaWaitlist</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:29:47 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
-					<div class='test-heading'>
-						<span class='test-name'>restoreParty</span>
-						<span class='test-time'>Jan 22, 2024 11:29:47 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jan 22, 2024 11:29:47 AM</span>
-	<span class='label end-time'>Jan 22, 2024 11:29:54 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+415ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Suite</span>
-				<span class='category label white-text'>CreateEditDeleteEtaWaitlist</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:29:54 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
-					<div class='test-heading'>
-						<span class='test-name'>editParty</span>
-						<span class='test-time'>Jan 22, 2024 11:29:54 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jan 22, 2024 11:29:54 AM</span>
-	<span class='label end-time'>Jan 22, 2024 11:30:27 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 32s+500ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Suite</span>
-				<span class='category label white-text'>CreateEditDeleteEtaWaitlist</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:30:27 AM</td>
-					<td class='step-details'>Test passed</td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>6:30:02 PM</td>
+					<td class='step-details'>Test failed</td>
 				</tr>
 			</tbody>
 		</table>
@@ -620,13 +282,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>Suite</span>
 						<span class='category-status right'>
-							<span class='label pass'>10</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 10</span>
 							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -641,54 +303,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 22, 2024 11:27:22 AM</td>
+										<td>Jan 22, 2024 06:29:21 PM</td>
 										<td class='linked' test-id='1'>createWaitList</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 22, 2024 11:27:38 AM</td>
-										<td class='linked' test-id='2'>deleteParty</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 22, 2024 11:27:49 AM</td>
-										<td class='linked' test-id='3'>checkHistory</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 22, 2024 11:27:53 AM</td>
-										<td class='linked' test-id='4'>restoreParty</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 22, 2024 11:28:00 AM</td>
-										<td class='linked' test-id='5'>editParty</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 22, 2024 11:28:34 AM</td>
-										<td class='linked' test-id='6'>createWaitList</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 22, 2024 11:28:49 AM</td>
-										<td class='linked' test-id='7'>deleteParty</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 22, 2024 11:29:35 AM</td>
-										<td class='linked' test-id='8'>checkHistory</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 22, 2024 11:29:47 AM</td>
-										<td class='linked' test-id='9'>restoreParty</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 22, 2024 11:29:54 AM</td>
-										<td class='linked' test-id='10'>editParty</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -699,13 +316,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>Create_Edit_delete_waitlist</span>
 						<span class='category-status right'>
-							<span class='label pass'>5</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 5</span>
 							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -720,83 +337,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 22, 2024 11:27:22 AM</td>
+										<td>Jan 22, 2024 06:29:21 PM</td>
 										<td class='linked' test-id='1'>createWaitList</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 22, 2024 11:27:38 AM</td>
-										<td class='linked' test-id='2'>deleteParty</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 22, 2024 11:27:49 AM</td>
-										<td class='linked' test-id='3'>checkHistory</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 22, 2024 11:27:53 AM</td>
-										<td class='linked' test-id='4'>restoreParty</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 22, 2024 11:28:00 AM</td>
-										<td class='linked' test-id='5'>editParty</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>CreateEditDeleteEtaWaitlist</span>
-						<span class='category-status right'>
-							<span class='label pass'>5</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 5</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jan 22, 2024 11:28:34 AM</td>
-										<td class='linked' test-id='6'>createWaitList</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 22, 2024 11:28:49 AM</td>
-										<td class='linked' test-id='7'>deleteParty</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 22, 2024 11:29:35 AM</td>
-										<td class='linked' test-id='8'>checkHistory</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 22, 2024 11:29:47 AM</td>
-										<td class='linked' test-id='9'>restoreParty</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 22, 2024 11:29:54 AM</td>
-										<td class='linked' test-id='10'>editParty</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -824,31 +367,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>10</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>10</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 22, 2024 11:27:13 AM</div>
+					<div class='panel-lead'>Jan 22, 2024 06:29:11 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 22, 2024 11:30:27 AM</div>
+			 		<div class='panel-lead'>Jan 22, 2024 06:30:02 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 3m 14s+221ms</div>
+					<div class='panel-lead'>0h 0m 51s+643ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -865,29 +408,20 @@
 						</tr>
 						<tr>
 							<td>Suite</td>
-							<td>10</td>
 							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 						<tr>
 							<td>Create_Edit_delete_waitlist</td>
-							<td>5</td>
 							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>CreateEditDeleteEtaWaitlist</td>
-							<td>5</td>
-							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -903,22 +437,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 10,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 10,
-				failChild: 0,
+				passChild: 0,
+				failChild: 4,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 4,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

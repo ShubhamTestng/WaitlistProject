@@ -8,7 +8,9 @@ listeners\ScreenshotListener.class
 com\waitlist\pomrepo\AddParty.class
 com\waitlist\genericutility\ExcelUtility.class
 com\waitlist\genericutility\DropdownUtility.class
+com\waitlist\pomrepo\EditParty.class
 com\waitlist\pomrepo\LandingPage.class
 com\waitlist\pomrepo\LoginPage.class
+com\waitlist\pomrepo\HistoryPage.class
 com\waitlist\genericutility\BaseClass.class
 com\waitlist\genericutility\JavaScriptUtility.class
