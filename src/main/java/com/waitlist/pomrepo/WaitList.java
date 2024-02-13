@@ -26,7 +26,7 @@ public class WaitList {
 		wait.until(ExpectedConditions.elementToBeClickable(element));	
 		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 		try {
-		Thread.sleep(1000); }
+		Thread.sleep(2000); }
 		catch (InterruptedException e) {
 		e.printStackTrace();	
 		}
@@ -63,6 +63,30 @@ public class WaitList {
 	public WebElement getShowHistoryButton() {
 		synchronised(By.xpath("//button[@data-tip='Show History']"),showHistoryButton);
 		return showHistoryButton;
+	}
+	
+	@FindBy(xpath="//td[text()='Smith']")
+	WebElement waitlistpartyHistory4;
+
+	public WebElement getWaitlistpartyHistory4() {
+		synchronised(By.xpath("//td[text()='Smith']"),waitlistpartyHistory4);
+		return waitlistpartyHistory4;
+	}
+
+	@FindBy(xpath="//a[@class='nav-link dropdown-toggle']")
+	WebElement accountButton;
+
+	public WebElement getAccountButton() {
+		synchronised(By.xpath("//a[@class='nav-link dropdown-toggle']"),accountButton);
+		return accountButton;
+	}
+	
+	@FindBy(xpath="//a[text()='Log Out']")
+	WebElement logoutButton;
+
+	public WebElement getLogoutButton() {
+		synchronised(By.xpath("//a[text()='Log Out']"),logoutButton);
+		return logoutButton;
 	}
 	
 	

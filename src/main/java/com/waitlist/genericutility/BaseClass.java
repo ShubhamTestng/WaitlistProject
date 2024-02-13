@@ -47,8 +47,8 @@ public class BaseClass {
 	public void executeAfterTest()
 	{
 				
-		driver.manage().window().minimize();
-		driver.quit();
+//		driver.manage().window().minimize();
+//		driver.quit();
 	}
 	
 	

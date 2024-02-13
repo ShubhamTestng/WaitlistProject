@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="endtoend.loginScenarios">
+      <class name="endtoend.Create_Edit_delete_waitlist">
         <methods>
-          <include name="loginWithValidCredentials"/>
+          <include name="createWaitList" invocation-numbers="0"/>
           <include name="executeBeforeTest"/>
           <include name="executeAfterTest"/>
         </methods>
-      </class> <!-- endtoend.loginScenarios -->
+      </class> <!-- endtoend.Create_Edit_delete_waitlist -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

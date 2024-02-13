@@ -1,8 +1,6 @@
 package listeners;
 
-
 import java.io.IOException;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -92,29 +90,27 @@ public class ExtentReportListener implements ITestListener {
 
 	public synchronized void onTestFailure(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " failed!"));
-		
-		try {
-            // Capture failure reason and include it in the Extent Report
-            String failureReason = result.getThrowable() != null ? result.getThrowable().getMessage() : "Unknown";
-            test.get().fail("Test failed. Failure Reason: " + failureReason);
-        } catch (Exception e) {
-            System.err.println("Exception thrown while updating test fail status " + Arrays.toString(e.getStackTrace()));
-        }
-		
-		test.get().fail("Test failed");
-		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
+	    
+	    try {
+	        // Capture failure reason and include it in the Extent Report
+	        String failureReason = result.getThrowable() != null ? result.getThrowable().getMessage() : "Unknown";
+	        test.get().fail("Test failed. Failure Reason: " + failureReason);
+	    } catch (Exception e) {
+	        System.err.println("Exception thrown while updating test fail status " + Arrays.toString(e.getStackTrace()));
+	    }
+	    
+	    test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 
 	public synchronized void onTestSkipped(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " skipped!"));
-//		try {
-//			test.get().skip(result.getThrowable(),
-//					MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot()).build());
-//		} catch (IOException e) {
-//			System.err
-//					.println("Exception thrown while updating test skip status " + Arrays.toString(e.getStackTrace()));
-//		}
-		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
+	    try {
+	        // Log the test as skipped
+	        test.get().skip(result.getThrowable());
+	    } catch (Exception e) {
+	        System.err.println("Exception thrown while updating test skip status " + Arrays.toString(e.getStackTrace()));
+	    }
+	    test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 
 	public synchronized void onTestFailedButWithinSuccessPercentage(ITestResult result) {

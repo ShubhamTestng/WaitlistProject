@@ -26,8 +26,4 @@ public class loginScenarios extends BaseClass {
 		login.getPasswordTextField().sendKeys(fileUtils.readFromPropertyFile("password"));
 		login.getLoginButton().click();
 	}
-	
-	
-	
-	
 }

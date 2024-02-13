@@ -7,10 +7,14 @@ import java.util.List;
 import org.testng.TestNG;
 import org.testng.xml.XmlSuite;
 
+import com.waitlist.genericutility.ScreenRecorderUtil;
+
 public class TestNgRunner {
 
-	 public static void main(String[] args) {
-	        runTestNGSuite();
+	 public static void main(String[] args) throws Exception {
+	     ScreenRecorderUtil.startRecord("main");   
+		 runTestNGSuite();
+		 ScreenRecorderUtil.stopRecord();
 	    }
 
 	    public static void runTestNGSuite() {

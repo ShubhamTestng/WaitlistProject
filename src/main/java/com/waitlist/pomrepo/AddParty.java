@@ -50,7 +50,7 @@ public class AddParty {
 	@FindBy(xpath="//input[@placeholder='email']")
 	WebElement emailTextField;
 	
-	@FindBy(xpath="//input[@value='6']")
+	@FindBy(xpath="//input[@name='sizeRadio' and @value='6']")
 	WebElement	memberSize;
 	
 	@FindBy(xpath="(//img[contains(@src,\"data:image/png;base64,iVBOR\")])[1]")
@@ -205,7 +205,7 @@ public class AddParty {
 	}
 
 	public WebElement getMemberSize() {
-		synchronised(By.xpath("//input[@value='6']"),memberSize);
+//		synchronised(By.xpath("//input[@name='sizeRadio' and @value='6']"),memberSize);
 		return memberSize;
 	}
 

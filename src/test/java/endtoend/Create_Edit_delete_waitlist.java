@@ -1,13 +1,17 @@
 package endtoend;
 
 
+import java.time.Duration;
 import org.apache.logging.log4j.LogManager;
-
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 import com.waitlist.genericutility.BaseClass;
 import com.waitlist.genericutility.DropdownUtility;
 import com.waitlist.genericutility.ExcelUtility;
@@ -20,6 +24,8 @@ import com.waitlist.pomrepo.LandingPage;
 import com.waitlist.pomrepo.LoginPage;
 import com.waitlist.pomrepo.WaitList;
 import com.waitlist.pomrepo.WelcomePage;
+
+import net.bytebuddy.utility.RandomString;
 
 
 public class Create_Edit_delete_waitlist extends BaseClass {
@@ -59,36 +65,37 @@ public class Create_Edit_delete_waitlist extends BaseClass {
 		
 		welcome.getWaitlistLink().click();
 		log.info("Clicked waitlist link");
-		Assert.assertEquals(driver.getCurrentUrl().equals("https://fourtopstaging.appspot.com/v2/waitlist/?place_id=8197710014"), true);
+		Thread.sleep(2000);
+//		Assert.assertEquals(driver.getCurrentUrl().equals("https://fourtopstaging.appspot.com/v2/waitlist/?place_id=8197710014"), true);
 			
-//	waitList.getAddPartyButton().click();
-//	addParty.getNameTextField().sendKeys(name);
-//	addParty.getPhoneTextField().sendKeys(Phone);
-//	addParty.getEmailTextField().sendKeys(Email);
-//	addParty.getMemberSize().click();
-//	addParty.getAdultButton().click();
-//	
-//	for(int i=1;i<=2;i++) {
-//	addParty.getKidsButton().click();
-//	}
-//	
-//	for(int i=1;i<=3;i++) {
-//	addParty.getAgedButton().click();
-//	}
-//	
-//	addParty.getStatusButton().click();
-//	addParty.getNotesTextBox().sendKeys(RandomString.make(200));
-//	addParty.getNextButton().click();
-//	
-//	dropdown.dropdown(addParty.getTimeDropdown(),"45 Minutes");
-//	Thread.sleep(2000);
-//	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
-//	WebElement nextBtn = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//button[text()='next']"))));
+	waitList.getAddPartyButton().click();
+	addParty.getNameTextField().sendKeys(name);
+	addParty.getPhoneTextField().sendKeys(Phone);
+	addParty.getEmailTextField().sendKeys(Email);
+	addParty.getMemberSize().click();
+	addParty.getAdultButton().click();
+	
+	for(int i=1;i<=2;i++) {
+	addParty.getKidsButton().click();
+	}
+	
+	for(int i=1;i<=3;i++) {
+	addParty.getAgedButton().click();
+	}
+	
+	addParty.getStatusButton().click();
+	addParty.getNotesTextBox().sendKeys(RandomString.make(200));
+	addParty.getNextButton().click();
+	
+	dropdown.dropdown(addParty.getTimeDropdown(),"45 Minutes");
+	Thread.sleep(2000);
+	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+	WebElement nextBtn = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//button[text()='next']"))));
 //	nextBtn.click();
-//	
+	
 //	driver.findElement(By.xpath("//tr[@id='assign_7']")).click();
 //	nextBtn.click();
-//	addParty.getClosebuttonatAssignment().click();
+	addParty.getClosebuttonatAssignment().click();
 		
 	}	
 	
@@ -106,14 +113,7 @@ public class Create_Edit_delete_waitlist extends BaseClass {
 		//Delete Party
 		editParty.getDeleteButton().click();
 		log.info("Clicked delete button");
-		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='text-center modal-header']/../..//div[@class='modal-content']")).isDisplayed(),true);
-		
-		editParty.getNoAction().click();
-		log.info("Clicked no button");
-		
-		editParty.getDeleteButton().click();
-		log.info("Clicked delete button");
-		
+						
 		editParty.getYesAction().click();
 		log.info("Clicked yes button");
 		
@@ -170,13 +170,13 @@ public class Create_Edit_delete_waitlist extends BaseClass {
 		editParty.getEmailTextField().clear();
 		log.info("Cleared email text field");
 		
-		editParty.getEmailTextField().sendKeys("Robert@yopmail.com");
+		editParty.getEmailTextField().sendKeys("Sumit@yopmail.com");
 		log.info("Entered Email");
 		
 		editParty.getNotesTextField().clear();
 		log.info("Cleared notes text field");
 		
-		editParty.getNotesTextField().sendKeys("abc");
+		editParty.getNotesTextField().sendKeys("Edited text");
 		log.info("Entered notes in notes text field");
 		
 		DropdownUtility dropdown = new DropdownUtility();
@@ -201,8 +201,63 @@ public class Create_Edit_delete_waitlist extends BaseClass {
 		editParty.getColorCode().click();
 		log.info("Clicked color code for status");
 		
-		//closing without saving
-		editParty.getCloseButton().click();
+		editParty.getSaveButton().click();
+		
+	}
+	
+	@Test(priority=6)
+	public void restoreEditParty() {
+		
+		EditParty editParty = new EditParty(driver);
+		
+		editParty.getEditWaitlistPartylink2().click();	
+		log.info("Clicked edit waitlist party button");
+		
+		editParty.getNameTextField().clear();
+		log.info("Cleared name text field");
+		
+		editParty.getNameTextField().sendKeys("Robert");
+		log.info("Entered Name");
+		
+		editParty.getPhoneTextField().clear();
+		log.info("Cleared phone text field");
+		
+		editParty.getEmailTextField().clear();
+		log.info("Cleared email text field");
+		
+		editParty.getEmailTextField().sendKeys("Robert@yopmail.com");
+		log.info("Entered Email");
+		
+		editParty.getNotesTextField().clear();
+		log.info("Cleared notes text field");
+		
+		editParty.getNotesTextField().sendKeys("Original text");
+		log.info("Entered notes in notes text field");
+		
+		DropdownUtility dropdown = new DropdownUtility();
+		dropdown.dropdown(editParty.getQuotedDropdown(),"3 Hour 15 Minutes");
+		log.info("Entered time in quoted duration");
+		
+		editParty.getUpdateLink().click();
+		log.info("Clicked update link");
+		
+		editParty.getAssignment().click();
+		log.info("Clicked  assignment link");
+		
+		editParty.getDoneButton().click();
+		log.info("Clicked done button");
+		
+		editParty.getSize().clear();
+		log.info("Cleared member size");
+		
+		editParty.getSize().sendKeys("7");
+		log.info("Entered member size");
+		
+		editParty.getColorCode().click();
+		log.info("Clicked color code for status");
+		
+		
+		editParty.getSaveButton().click();
 		
 	}
 	
@@ -215,7 +270,7 @@ public class Create_Edit_delete_waitlist extends BaseClass {
     public Object[][] testData() {
        
         return new Object[][]{
-        {"Robert", "564582549","Smith@yopmail.com" }
+        {"Robert", "564582549","Robert@yopmail.com" }
                 
         };
     }

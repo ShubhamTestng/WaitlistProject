@@ -163,6 +163,13 @@ public class EditParty {
 		return editWaitlistPartylink;
 	}
 	
+	@FindBy(xpath="//td[text()='Robert']")
+	WebElement editWaitlistPartylink2;
+	
+	public WebElement getEditWaitlistPartylink2() {
+		synchronised(By.xpath("//td[text()='Sumit']"),editWaitlistPartylink2);
+		return editWaitlistPartylink2;
+	}
 	
 	
 

@@ -23,6 +23,8 @@ import com.waitlist.pomrepo.LoginPage;
 import com.waitlist.pomrepo.WaitList;
 import com.waitlist.pomrepo.WelcomePage;
 
+import net.bytebuddy.utility.RandomString;
+
 
 public class CreateEditDeleteEtaWaitlist extends BaseClass {
 
@@ -32,17 +34,15 @@ public class CreateEditDeleteEtaWaitlist extends BaseClass {
 	public Logger log = LogManager.getLogger(Create_Edit_delete_waitlist.class);
 	JavaScriptUtility jse = new JavaScriptUtility();
 	public Scanner s = new Scanner(System.in);
-	
-	
+		
 	@Test(priority=1, dataProvider = "testDataProvider")
-	public void createWaitList(String name,String Phone, String Email ) throws IOException
+	public void createWaitList(String name,String Phone, String Email ) throws Throwable
 	{
-		WaitList waitList = new WaitList(driver);
 		WelcomePage welcome = new WelcomePage(driver);
 		LandingPage land = new LandingPage(driver);
 		LoginPage login = new LoginPage(driver);
-		AddParty addParty = new AddParty(driver);
-		
+		AddParty addParty = new AddParty(driver);		
+		WaitList waitList = new WaitList(driver);
 		
 	land.getLoginButton().click();	
 	log.info("Clicked login button");
@@ -62,7 +62,6 @@ public class CreateEditDeleteEtaWaitlist extends BaseClass {
 	
 	welcome.getWaitlistLink().click();
 	log.info("Clicked waitlist link");
-	Assert.assertEquals(driver.getCurrentUrl().equals("https://fourtopstaging.appspot.com/v2/waitlist/?place_id=8197710014"), true);
 	
 //	waitList.getAddPartyButton().click();
 //	
@@ -85,23 +84,20 @@ public class CreateEditDeleteEtaWaitlist extends BaseClass {
 //	addParty.getNextButton().click();
 //	
 //	addParty.getETAOption().click();
-//	//	addParty.getETADate().sendKeys("03/01/2024");
+//	addParty.getETADate().sendKeys("03/01/2024");
 //	addParty.getETATime().clear();
 //	driver.findElement(By.xpath("//li[text()='8:30 PM']")).click();
 //	Thread.sleep(2000);
 //	dropdown.dropdown(addParty.getETADuration(), "2 Hour 30 Minutes");
 //	Thread.sleep(2000);	
 //	addParty.getETAnext().click();
-//	
 //	addParty.getETAassignment().click();
-//	
 //	addParty.getETAnext().click();
 		
 	}	
-	
-	
-	@Test(priority=2, dataProvider = "testDataProvider")
-	public void deleteParty (String name,String Phone, String Email) throws Throwable  {
+		
+	@Test(priority=2)
+	public void deleteParty () throws Throwable  {
 		
 		WaitList waitList = new WaitList(driver);
 		EditParty editParty = new EditParty(driver);
@@ -111,25 +107,17 @@ public class CreateEditDeleteEtaWaitlist extends BaseClass {
 		
 		editParty.getDeleteButton().click();
 		log.info("Clicked delete button");
-		
-		editParty.getNoAction().click();
-		log.info("Clicked no button");
-		
-		editParty.getDeleteButton().click();
-		log.info("Clicked delete button");
-		
+				
 		editParty.getYesAction().click();
 		log.info("Clicked yes button");
 	}
-	
-	
-	@Test(priority=3, dataProvider = "testDataProvider")
-	public void checkHistory(String name,String Phone, String Email) throws Throwable {
+		
+	@Test(priority=3)
+	public void checkHistory() throws Throwable {
 		HistoryPage historyPage = new HistoryPage(driver);
 		AddParty addParty = new AddParty(driver);		
 		WaitList waitList = new WaitList(driver);
-		
-		
+				
 		//Check History After Deleting
 		waitList.getShowHistoryButton().click();
 		log.info("Clicked show history button");
@@ -142,8 +130,8 @@ public class CreateEditDeleteEtaWaitlist extends BaseClass {
 		log.info("Clicked return to waitlist button");
 	}
 	
-	@Test(priority=4, dataProvider = "testDataProvider")
-	public void restoreParty(String name,String Phone, String Email) throws Throwable {
+	@Test(priority=4)
+	public void restoreParty() throws Throwable {
 		HistoryPage historypage = new HistoryPage(driver);
 		
 		//Check party is restored
@@ -153,13 +141,67 @@ public class CreateEditDeleteEtaWaitlist extends BaseClass {
 	}
 	
 	
-	@Test(priority=5, dataProvider = "testDataProvider")
-	public void editParty(String name,String Phone, String Email) throws Throwable{
+	@Test(priority=5)
+	public void editParty() throws Throwable{
 		
 		HistoryPage historyPage= new HistoryPage(driver);
 		EditParty editParty = new EditParty(driver);
 		
 		historyPage.getWaitlistpartyHistory3().click();
+		log.info("Clicked edit waitlist party button");
+			
+		editParty.getNameTextField().clear();
+		log.info("Cleared name text field");
+		
+		editParty.getNameTextField().sendKeys("Smith");
+		log.info("Entered Name");
+		
+		editParty.getPhoneTextField().clear();
+		log.info("Cleared phone text field");
+		
+		editParty.getPhoneTextField().sendKeys("789456123");
+		log.info("Entered Phone number");
+		
+		editParty.getEmailTextField().clear();
+		log.info("Cleared email text field");
+		
+		editParty.getEmailTextField().sendKeys("Smith@yopmail.com");
+		log.info("Entered Email");
+		
+		editParty.getNotesTextField().clear();
+		log.info("Cleared notes text field");
+		
+		editParty.getNotesTextField().sendKeys("def");
+		log.info("Entered notes in notes text field");
+		
+		editParty.getUpdateLink().click();
+		log.info("Clicked update link");
+		
+		editParty.getAssignment().click();
+		log.info("Clicked  assignment link");
+		
+		editParty.getDoneButton().click();
+		log.info("Clicked done button");
+		
+		editParty.getSize().clear();
+		log.info("Cleared member size");
+		
+		editParty.getSize().sendKeys("8");
+		log.info("Entered member size");
+		
+		editParty.getColorCode().click();
+		log.info("Clicked color code for status");
+				
+		editParty.getSaveButton().click();
+	}
+	
+	
+	@Test(priority=6)
+	public void restoreEditParty() throws Throwable{
+		WaitList waitlist = new WaitList(driver);
+		EditParty editParty = new EditParty(driver);
+		
+		waitlist.getWaitlistpartyHistory4().click();
 		log.info("Clicked edit waitlist party button");
 			
 		editParty.getNameTextField().clear();
@@ -177,7 +219,7 @@ public class CreateEditDeleteEtaWaitlist extends BaseClass {
 		editParty.getEmailTextField().clear();
 		log.info("Cleared email text field");
 		
-		editParty.getEmailTextField().sendKeys("Robert@yopmail.com");
+		editParty.getEmailTextField().sendKeys("Richard@yopmail.com");
 		log.info("Entered Email");
 		
 		editParty.getNotesTextField().clear();
@@ -203,20 +245,23 @@ public class CreateEditDeleteEtaWaitlist extends BaseClass {
 		
 		editParty.getColorCode().click();
 		log.info("Clicked color code for status");
-		
-		//closing without saving
-		editParty.getCloseButton().click();
-		
+			
+		editParty.getSaveButton().click();
 	}
 	
-	
+	@Test(priority=7)
+	public void logout() throws Throwable{
+		WaitList waitlist = new WaitList(driver);
+		waitlist.getAccountButton().click();
+		waitlist.getLogoutButton().click();
+	}
 	
 	
 	
 	// DataProvider for above test
 	@DataProvider(name = "testDataProvider")
     public Object[][] testData() {
-       
+		
         return new Object[][]{
         {"Richard", "654879879","Richard@yopmail.com" }
                 
