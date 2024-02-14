@@ -8,50 +8,25 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">63,291</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">14</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">267,058</td><td></td><td></td></tr>
+<tr><th colspan="8">Default Suite</th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">endtoend.Create_Edit_delete_waitlist</td><td><a href="#m0">createWaitList</a></td><td rowspan="1">1707827652000</td><td rowspan="1">55069</td></tr></tbody>
-</table>
-<h2>Default test</h2><h3 id="m0">endtoend.Create_Edit_delete_waitlist#createWaitList</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Robert</td><td>564582549</td><td>Robert@yopmail.com</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@name=&apos;sizeRadio&apos; and @value=&apos;6&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58476}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58476/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a5f569963484689d96ccd95f6b5ccafd
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.waitlist.pomrepo.AddParty.synchronised(AddParty.java:26)
-	at com.waitlist.pomrepo.AddParty.getMemberSize(AddParty.java:208)
-	at endtoend.Create_Edit_delete_waitlist.createWaitList(Create_Edit_delete_waitlist.java:75)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">endtoend.CreateEditDeleteEtaWaitlist</td><td><a href="#m0">checkHistory</a></td><td rowspan="1">1707886251734</td><td rowspan="1">9698</td></tr><tr class="passedeven"><td><a href="#m1">createWaitList</a></td><td rowspan="1">1707886220480</td><td rowspan="1">15178</td></tr><tr class="passedeven"><td><a href="#m2">deleteParty</a></td><td rowspan="1">1707886235660</td><td rowspan="1">16072</td></tr><tr class="passedeven"><td><a href="#m3">editParty</a></td><td rowspan="1">1707886265301</td><td rowspan="1">48174</td></tr><tr class="passedeven"><td><a href="#m4">logout</a></td><td rowspan="1">1707886353787</td><td rowspan="1">9514</td></tr><tr class="passedeven"><td><a href="#m5">restoreEditParty</a></td><td rowspan="1">1707886313476</td><td rowspan="1">40307</td></tr><tr class="passedeven"><td><a href="#m6">restoreParty</a></td><td rowspan="1">1707886261434</td><td rowspan="1">3866</td></tr><tr class="passedodd"><td rowspan="7">endtoend.Create_Edit_delete_waitlist</td><td><a href="#m7">checkHistory</a></td><td rowspan="1">1707886135418</td><td rowspan="1">4100</td></tr><tr class="passedodd"><td><a href="#m8">createWaitList</a></td><td rowspan="1">1707886102000</td><td rowspan="1">18079</td></tr><tr class="passedodd"><td><a href="#m9">deleteParty</a></td><td rowspan="1">1707886120092</td><td rowspan="1">15322</td></tr><tr class="passedodd"><td><a href="#m10">editParty</a></td><td rowspan="1">1707886144537</td><td rowspan="1">31482</td></tr><tr class="passedodd"><td><a href="#m11">logout</a></td><td rowspan="1">1707886207179</td><td rowspan="1">9211</td></tr><tr class="passedodd"><td><a href="#m12">restoreEditParty</a></td><td rowspan="1">1707886176021</td><td rowspan="1">31155</td></tr><tr class="passedodd"><td><a href="#m13">restoreParty</a></td><td rowspan="1">1707886139522</td><td rowspan="1">5011</td></tr></tbody>
+<tbody><tr><th colspan="4">Default Suite</th></tr></tbody></table>
+<h2>Test</h2><h3 id="m0">endtoend.CreateEditDeleteEtaWaitlist#checkHistory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">endtoend.CreateEditDeleteEtaWaitlist#createWaitList</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Richard</td><td>654879879</td><td>Richard@yopmail.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">endtoend.CreateEditDeleteEtaWaitlist#deleteParty</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">endtoend.CreateEditDeleteEtaWaitlist#editParty</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">endtoend.CreateEditDeleteEtaWaitlist#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">endtoend.CreateEditDeleteEtaWaitlist#restoreEditParty</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">endtoend.CreateEditDeleteEtaWaitlist#restoreParty</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">endtoend.Create_Edit_delete_waitlist#checkHistory</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Robert</td><td>564582549</td><td>Robert@yopmail.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">endtoend.Create_Edit_delete_waitlist#createWaitList</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Robert</td><td>564582549</td><td>Robert@yopmail.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">endtoend.Create_Edit_delete_waitlist#deleteParty</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Robert</td><td>564582549</td><td>Robert@yopmail.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">endtoend.Create_Edit_delete_waitlist#editParty</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Robert</td><td>564582549</td><td>Robert@yopmail.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">endtoend.Create_Edit_delete_waitlist#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">endtoend.Create_Edit_delete_waitlist#restoreEditParty</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">endtoend.Create_Edit_delete_waitlist#restoreParty</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Robert</td><td>564582549</td><td>Robert@yopmail.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

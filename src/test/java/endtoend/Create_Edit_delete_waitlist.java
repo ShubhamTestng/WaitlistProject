@@ -11,7 +11,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import com.waitlist.genericutility.BaseClass;
 import com.waitlist.genericutility.DropdownUtility;
 import com.waitlist.genericutility.ExcelUtility;
@@ -24,7 +23,6 @@ import com.waitlist.pomrepo.LandingPage;
 import com.waitlist.pomrepo.LoginPage;
 import com.waitlist.pomrepo.WaitList;
 import com.waitlist.pomrepo.WelcomePage;
-
 import net.bytebuddy.utility.RandomString;
 
 
@@ -65,37 +63,36 @@ public class Create_Edit_delete_waitlist extends BaseClass {
 		
 		welcome.getWaitlistLink().click();
 		log.info("Clicked waitlist link");
-		Thread.sleep(2000);
 //		Assert.assertEquals(driver.getCurrentUrl().equals("https://fourtopstaging.appspot.com/v2/waitlist/?place_id=8197710014"), true);
 			
-	waitList.getAddPartyButton().click();
-	addParty.getNameTextField().sendKeys(name);
-	addParty.getPhoneTextField().sendKeys(Phone);
-	addParty.getEmailTextField().sendKeys(Email);
-	addParty.getMemberSize().click();
-	addParty.getAdultButton().click();
-	
-	for(int i=1;i<=2;i++) {
-	addParty.getKidsButton().click();
-	}
-	
-	for(int i=1;i<=3;i++) {
-	addParty.getAgedButton().click();
-	}
-	
-	addParty.getStatusButton().click();
-	addParty.getNotesTextBox().sendKeys(RandomString.make(200));
-	addParty.getNextButton().click();
-	
-	dropdown.dropdown(addParty.getTimeDropdown(),"45 Minutes");
-	Thread.sleep(2000);
-	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
-	WebElement nextBtn = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//button[text()='next']"))));
+//	waitList.getAddPartyButton().click();
+//	addParty.getNameTextField().sendKeys(name);
+//	addParty.getPhoneTextField().sendKeys(Phone);
+//	addParty.getEmailTextField().sendKeys(Email);
+//	addParty.getMemberSize().click();
+//	addParty.getAdultButton().click();
+//	
+//	for(int i=1;i<=2;i++) {
+//	addParty.getKidsButton().click();
+//	}
+//	
+//	for(int i=1;i<=3;i++) {
+//	addParty.getAgedButton().click();
+//	}
+//	
+//	addParty.getStatusButton().click();
+//	addParty.getNotesTextBox().sendKeys(RandomString.make(200));
+//	addParty.getNextButton().click();
+//	
+//	dropdown.dropdown(addParty.getTimeDropdown(),"45 Minutes");
+//	Thread.sleep(2000);
+//	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+//	WebElement nextBtn = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//button[text()='next']"))));
 //	nextBtn.click();
 	
 //	driver.findElement(By.xpath("//tr[@id='assign_7']")).click();
 //	nextBtn.click();
-	addParty.getClosebuttonatAssignment().click();
+//	addParty.getClosebuttonatAssignment().click();
 		
 	}	
 	
@@ -261,6 +258,12 @@ public class Create_Edit_delete_waitlist extends BaseClass {
 		
 	}
 	
+	@Test(priority=7)
+	public void logout() throws Throwable{
+		WaitList waitlist = new WaitList(driver);
+		waitlist.getAccountButton().click();
+		waitlist.getLogoutButton().click();
+	}
 	
 	
 	

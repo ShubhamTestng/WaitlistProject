@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/7/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Feb 13 15:12:35 IST 2024</td>
+<td>Started on:</td><td>Wed Feb 14 10:18:16 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>192 seconds (192991 ms)</td>
+<tr><td>Total time:</td><td>267 seconds (267058 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,693 +76,75 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='endtoend.CreateEditDeleteEtaWaitlist.deleteParty()'><b>deleteParty</b><br>Test class: endtoend.CreateEditDeleteEtaWaitlist</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //td[text()=&apos;Richard&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.waitlist.pomrepo.WaitList.synchronised(WaitList.java:25)
-	at com.waitlist.pomrepo.WaitList.getWaitListparty(WaitList.java:49)
-	at endtoend.CreateEditDeleteEtaWaitlist.deleteParty(CreateEditDeleteEtaWaitlist.java:102)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at runnable.TestNgRunner.runTestNGSuite(TestNgRunner.java:38)
-	at runnable.TestNgRunner.main(TestNgRunner.java:16)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.161)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [11c8d61e993396a011a4b742996fe3c7, findElement {using=xpath, value=//td[text()=&apos;Richard&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56022}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56022/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 11c8d61e993396a011a4b742996fe3c7
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
-	... 31 more
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1315447704", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1315447704'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //td[text()=&apos;Richard&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.waitlist.pomrepo.WaitList.synchronised(WaitList.java:25)
-	at com.waitlist.pomrepo.WaitList.getWaitListparty(WaitList.java:49)
-	at endtoend.CreateEditDeleteEtaWaitlist.deleteParty(CreateEditDeleteEtaWaitlist.java:102)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1251)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at runnable.TestNgRunner.runTestNGSuite(TestNgRunner.java:38)
-	at runnable.TestNgRunner.main(TestNgRunner.java:16)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.161)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [11c8d61e993396a011a4b742996fe3c7, findElement {using=xpath, value=//td[text()=&apos;Richard&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56022}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56022/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 11c8d61e993396a011a4b742996fe3c7
-	at jdk.internal.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
-	... 31 more
-</pre></div></td>
-<td>30</td>
-<td>endtoend.CreateEditDeleteEtaWaitlist@f19c9d2</td></tr>
+<td title='endtoend.Create_Edit_delete_waitlist.restoreParty()'><b>restoreParty</b><br>Test class: endtoend.Create_Edit_delete_waitlist<br>Parameters: Robert, 564582549, Robert@yopmail.com</td>
+<td></td>
+<td>5</td>
+<td>endtoend.Create_Edit_delete_waitlist@644c78d4</td></tr>
 <tr>
-<td title='endtoend.CreateEditDeleteEtaWaitlist.checkHistory()'><b>checkHistory</b><br>Test class: endtoend.CreateEditDeleteEtaWaitlist</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //button[@data-tip=&apos;Show History&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.waitlist.pomrepo.WaitList.synchronised(WaitList.java:25)
-	at com.waitlist.pomrepo.WaitList.getShowHistoryButton(WaitList.java:64)
-	at endtoend.CreateEditDeleteEtaWaitlist.checkHistory(CreateEditDeleteEtaWaitlist.java:119)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at runnable.TestNgRunner.runTestNGSuite(TestNgRunner.java:38)
-	at runnable.TestNgRunner.main(TestNgRunner.java:16)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.161)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [11c8d61e993396a011a4b742996fe3c7, findElement {using=xpath, value=//button[@data-tip=&apos;Show History&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56022}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56022/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 11c8d61e993396a011a4b742996fe3c7
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
-	... 31 more
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace775093282", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace775093282'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //button[@data-tip=&apos;Show History&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.waitlist.pomrepo.WaitList.synchronised(WaitList.java:25)
-	at com.waitlist.pomrepo.WaitList.getShowHistoryButton(WaitList.java:64)
-	at endtoend.CreateEditDeleteEtaWaitlist.checkHistory(CreateEditDeleteEtaWaitlist.java:119)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1251)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at runnable.TestNgRunner.runTestNGSuite(TestNgRunner.java:38)
-	at runnable.TestNgRunner.main(TestNgRunner.java:16)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.161)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [11c8d61e993396a011a4b742996fe3c7, findElement {using=xpath, value=//button[@data-tip=&apos;Show History&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56022}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56022/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 11c8d61e993396a011a4b742996fe3c7
-	at jdk.internal.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
-	... 31 more
-</pre></div></td>
-<td>30</td>
-<td>endtoend.CreateEditDeleteEtaWaitlist@f19c9d2</td></tr>
+<td title='endtoend.Create_Edit_delete_waitlist.restoreEditParty()'><b>restoreEditParty</b><br>Test class: endtoend.Create_Edit_delete_waitlist</td>
+<td></td>
+<td>31</td>
+<td>endtoend.Create_Edit_delete_waitlist@644c78d4</td></tr>
+<tr>
+<td title='endtoend.Create_Edit_delete_waitlist.deleteParty()'><b>deleteParty</b><br>Test class: endtoend.Create_Edit_delete_waitlist<br>Parameters: Robert, 564582549, Robert@yopmail.com</td>
+<td></td>
+<td>15</td>
+<td>endtoend.Create_Edit_delete_waitlist@644c78d4</td></tr>
+<tr>
+<td title='endtoend.Create_Edit_delete_waitlist.logout()'><b>logout</b><br>Test class: endtoend.Create_Edit_delete_waitlist</td>
+<td></td>
+<td>9</td>
+<td>endtoend.Create_Edit_delete_waitlist@644c78d4</td></tr>
+<tr>
+<td title='endtoend.Create_Edit_delete_waitlist.createWaitList()'><b>createWaitList</b><br>Test class: endtoend.Create_Edit_delete_waitlist<br>Parameters: Robert, 564582549, Robert@yopmail.com</td>
+<td></td>
+<td>18</td>
+<td>endtoend.Create_Edit_delete_waitlist@644c78d4</td></tr>
 <tr>
 <td title='endtoend.CreateEditDeleteEtaWaitlist.logout()'><b>logout</b><br>Test class: endtoend.CreateEditDeleteEtaWaitlist</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[@class=&apos;nav-link dropdown-toggle&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.waitlist.pomrepo.WaitList.synchronised(WaitList.java:25)
-	at com.waitlist.pomrepo.WaitList.getAccountButton(WaitList.java:80)
-	at endtoend.CreateEditDeleteEtaWaitlist.logout(CreateEditDeleteEtaWaitlist.java:252)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at runnable.TestNgRunner.runTestNGSuite(TestNgRunner.java:38)
-	at runnable.TestNgRunner.main(TestNgRunner.java:16)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.161)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [11c8d61e993396a011a4b742996fe3c7, findElement {using=xpath, value=//a[@class=&apos;nav-link dropdown-toggle&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56022}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56022/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 11c8d61e993396a011a4b742996fe3c7
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
-	... 31 more
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2089816579", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2089816579'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[@class=&apos;nav-link dropdown-toggle&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.waitlist.pomrepo.WaitList.synchronised(WaitList.java:25)
-	at com.waitlist.pomrepo.WaitList.getAccountButton(WaitList.java:80)
-	at endtoend.CreateEditDeleteEtaWaitlist.logout(CreateEditDeleteEtaWaitlist.java:252)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1251)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at runnable.TestNgRunner.runTestNGSuite(TestNgRunner.java:38)
-	at runnable.TestNgRunner.main(TestNgRunner.java:16)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.161)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [11c8d61e993396a011a4b742996fe3c7, findElement {using=xpath, value=//a[@class=&apos;nav-link dropdown-toggle&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56022}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56022/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 11c8d61e993396a011a4b742996fe3c7
-	at jdk.internal.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
-	... 31 more
-</pre></div></td>
-<td>30</td>
-<td>endtoend.CreateEditDeleteEtaWaitlist@f19c9d2</td></tr>
+<td></td>
+<td>9</td>
+<td>endtoend.CreateEditDeleteEtaWaitlist@4a067c25</td></tr>
 <tr>
-<td title='endtoend.CreateEditDeleteEtaWaitlist.editParty()'><b>editParty</b><br>Test class: endtoend.CreateEditDeleteEtaWaitlist</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //td[text()=&apos;Richard&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.waitlist.pomrepo.HistoryPage.synchronised(HistoryPage.java:25)
-	at com.waitlist.pomrepo.HistoryPage.getWaitlistpartyHistory3(HistoryPage.java:66)
-	at endtoend.CreateEditDeleteEtaWaitlist.editParty(CreateEditDeleteEtaWaitlist.java:147)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at runnable.TestNgRunner.runTestNGSuite(TestNgRunner.java:38)
-	at runnable.TestNgRunner.main(TestNgRunner.java:16)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.161)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [11c8d61e993396a011a4b742996fe3c7, findElement {using=xpath, value=//td[text()=&apos;Richard&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56022}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56022/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 11c8d61e993396a011a4b742996fe3c7
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
-	... 31 more
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace798579452", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace798579452'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //td[text()=&apos;Richard&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.waitlist.pomrepo.HistoryPage.synchronised(HistoryPage.java:25)
-	at com.waitlist.pomrepo.HistoryPage.getWaitlistpartyHistory3(HistoryPage.java:66)
-	at endtoend.CreateEditDeleteEtaWaitlist.editParty(CreateEditDeleteEtaWaitlist.java:147)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1251)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at runnable.TestNgRunner.runTestNGSuite(TestNgRunner.java:38)
-	at runnable.TestNgRunner.main(TestNgRunner.java:16)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.161)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [11c8d61e993396a011a4b742996fe3c7, findElement {using=xpath, value=//td[text()=&apos;Richard&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56022}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56022/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 11c8d61e993396a011a4b742996fe3c7
-	at jdk.internal.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
-	... 31 more
-</pre></div></td>
-<td>30</td>
-<td>endtoend.CreateEditDeleteEtaWaitlist@f19c9d2</td></tr>
-<tr>
-<td title='endtoend.CreateEditDeleteEtaWaitlist.restoreParty()'><b>restoreParty</b><br>Test class: endtoend.CreateEditDeleteEtaWaitlist</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[text()=&apos;Waitlist&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.waitlist.pomrepo.HistoryPage.synchronised(HistoryPage.java:25)
-	at com.waitlist.pomrepo.HistoryPage.getWaitlistLinkHistoryPage(HistoryPage.java:40)
-	at endtoend.CreateEditDeleteEtaWaitlist.restoreParty(CreateEditDeleteEtaWaitlist.java:135)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at runnable.TestNgRunner.runTestNGSuite(TestNgRunner.java:38)
-	at runnable.TestNgRunner.main(TestNgRunner.java:16)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.161)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [11c8d61e993396a011a4b742996fe3c7, findElement {using=xpath, value=//a[text()=&apos;Waitlist&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56022}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56022/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 11c8d61e993396a011a4b742996fe3c7
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
-	... 31 more
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1454942961", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1454942961'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[text()=&apos;Waitlist&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.waitlist.pomrepo.HistoryPage.synchronised(HistoryPage.java:25)
-	at com.waitlist.pomrepo.HistoryPage.getWaitlistLinkHistoryPage(HistoryPage.java:40)
-	at endtoend.CreateEditDeleteEtaWaitlist.restoreParty(CreateEditDeleteEtaWaitlist.java:135)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1251)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at runnable.TestNgRunner.runTestNGSuite(TestNgRunner.java:38)
-	at runnable.TestNgRunner.main(TestNgRunner.java:16)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.161)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [11c8d61e993396a011a4b742996fe3c7, findElement {using=xpath, value=//a[text()=&apos;Waitlist&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56022}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56022/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 11c8d61e993396a011a4b742996fe3c7
-	at jdk.internal.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
-	... 31 more
-</pre></div></td>
-<td>30</td>
-<td>endtoend.CreateEditDeleteEtaWaitlist@f19c9d2</td></tr>
+<td title='endtoend.Create_Edit_delete_waitlist.editParty()'><b>editParty</b><br>Test class: endtoend.Create_Edit_delete_waitlist<br>Parameters: Robert, 564582549, Robert@yopmail.com</td>
+<td></td>
+<td>31</td>
+<td>endtoend.Create_Edit_delete_waitlist@644c78d4</td></tr>
 <tr>
 <td title='endtoend.CreateEditDeleteEtaWaitlist.restoreEditParty()'><b>restoreEditParty</b><br>Test class: endtoend.CreateEditDeleteEtaWaitlist</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //td[text()=&apos;Smith&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.waitlist.pomrepo.WaitList.synchronised(WaitList.java:25)
-	at com.waitlist.pomrepo.WaitList.getWaitlistpartyHistory4(WaitList.java:72)
-	at endtoend.CreateEditDeleteEtaWaitlist.restoreEditParty(CreateEditDeleteEtaWaitlist.java:201)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at runnable.TestNgRunner.runTestNGSuite(TestNgRunner.java:38)
-	at runnable.TestNgRunner.main(TestNgRunner.java:16)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.161)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [11c8d61e993396a011a4b742996fe3c7, findElement {using=xpath, value=//td[text()=&apos;Smith&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56022}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56022/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 11c8d61e993396a011a4b742996fe3c7
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
-	... 31 more
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1968922416", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1968922416'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //td[text()=&apos;Smith&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.waitlist.pomrepo.WaitList.synchronised(WaitList.java:25)
-	at com.waitlist.pomrepo.WaitList.getWaitlistpartyHistory4(WaitList.java:72)
-	at endtoend.CreateEditDeleteEtaWaitlist.restoreEditParty(CreateEditDeleteEtaWaitlist.java:201)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1251)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at runnable.TestNgRunner.runTestNGSuite(TestNgRunner.java:38)
-	at runnable.TestNgRunner.main(TestNgRunner.java:16)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.161)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [11c8d61e993396a011a4b742996fe3c7, findElement {using=xpath, value=//td[text()=&apos;Smith&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56022}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56022/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 11c8d61e993396a011a4b742996fe3c7
-	at jdk.internal.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
-	... 31 more
-</pre></div></td>
-<td>30</td>
-<td>endtoend.CreateEditDeleteEtaWaitlist@f19c9d2</td></tr>
+<td></td>
+<td>40</td>
+<td>endtoend.CreateEditDeleteEtaWaitlist@4a067c25</td></tr>
 <tr>
 <td title='endtoend.CreateEditDeleteEtaWaitlist.createWaitList()'><b>createWaitList</b><br>Test class: endtoend.CreateEditDeleteEtaWaitlist<br>Parameters: Richard, 654879879, Richard@yopmail.com</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.161)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [11c8d61e993396a011a4b742996fe3c7, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56022}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56022/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 11c8d61e993396a011a4b742996fe3c7
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:317)
-	at endtoend.CreateEditDeleteEtaWaitlist.createWaitList(CreateEditDeleteEtaWaitlist.java:43)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at runnable.TestNgRunner.runTestNGSuite(TestNgRunner.java:38)
-	at runnable.TestNgRunner.main(TestNgRunner.java:16)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace947462790", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace947462790'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.161)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [11c8d61e993396a011a4b742996fe3c7, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56022}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56022/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 11c8d61e993396a011a4b742996fe3c7
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:317)
-	at endtoend.CreateEditDeleteEtaWaitlist.createWaitList(CreateEditDeleteEtaWaitlist.java:43)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1251)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at runnable.TestNgRunner.runTestNGSuite(TestNgRunner.java:38)
-	at runnable.TestNgRunner.main(TestNgRunner.java:16)
-</pre></div></td>
-<td>1</td>
-<td>endtoend.CreateEditDeleteEtaWaitlist@f19c9d2</td></tr>
+<td></td>
+<td>15</td>
+<td>endtoend.CreateEditDeleteEtaWaitlist@4a067c25</td></tr>
+<tr>
+<td title='endtoend.CreateEditDeleteEtaWaitlist.checkHistory()'><b>checkHistory</b><br>Test class: endtoend.CreateEditDeleteEtaWaitlist</td>
+<td></td>
+<td>9</td>
+<td>endtoend.CreateEditDeleteEtaWaitlist@4a067c25</td></tr>
+<tr>
+<td title='endtoend.Create_Edit_delete_waitlist.checkHistory()'><b>checkHistory</b><br>Test class: endtoend.Create_Edit_delete_waitlist<br>Parameters: Robert, 564582549, Robert@yopmail.com</td>
+<td></td>
+<td>4</td>
+<td>endtoend.Create_Edit_delete_waitlist@644c78d4</td></tr>
+<tr>
+<td title='endtoend.CreateEditDeleteEtaWaitlist.deleteParty()'><b>deleteParty</b><br>Test class: endtoend.CreateEditDeleteEtaWaitlist</td>
+<td></td>
+<td>16</td>
+<td>endtoend.CreateEditDeleteEtaWaitlist@4a067c25</td></tr>
+<tr>
+<td title='endtoend.CreateEditDeleteEtaWaitlist.restoreParty()'><b>restoreParty</b><br>Test class: endtoend.CreateEditDeleteEtaWaitlist</td>
+<td></td>
+<td>3</td>
+<td>endtoend.CreateEditDeleteEtaWaitlist@4a067c25</td></tr>
+<tr>
+<td title='endtoend.CreateEditDeleteEtaWaitlist.editParty()'><b>editParty</b><br>Test class: endtoend.CreateEditDeleteEtaWaitlist</td>
+<td></td>
+<td>48</td>
+<td>endtoend.CreateEditDeleteEtaWaitlist@4a067c25</td></tr>
 </table><p>
 </body>
 </html>

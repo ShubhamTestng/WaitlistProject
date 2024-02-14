@@ -6,19 +6,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="endtoend.CreateEditDeleteEtaWaitlist">
+      <class name="endtoend.Create_Edit_delete_waitlist">
         <methods>
-          <include name="checkHistory"/>
-          <include name="editParty"/>
-          <include name="restoreParty"/>
+          <include name="editParty" invocation-numbers="0"/>
           <include name="restoreEditParty"/>
           <include name="executeBeforeTest"/>
-          <include name="deleteParty"/>
-          <include name="logout"/>
           <include name="executeAfterTest"/>
-          <include name="createWaitList" invocation-numbers="0"/>
+          <include name="logout"/>
         </methods>
-      </class> <!-- endtoend.CreateEditDeleteEtaWaitlist -->
+      </class> <!-- endtoend.Create_Edit_delete_waitlist -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

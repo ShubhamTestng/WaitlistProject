@@ -27,7 +27,7 @@ public class EditParty {
 		wait.until(ExpectedConditions.elementToBeClickable(element));	
 		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 		try {
-		Thread.sleep(1000); }
+		Thread.sleep(1500); }
 		catch (InterruptedException e) {
 		e.printStackTrace();	
 		}
@@ -163,7 +163,7 @@ public class EditParty {
 		return editWaitlistPartylink;
 	}
 	
-	@FindBy(xpath="//td[text()='Robert']")
+	@FindBy(xpath="//td[text()='Sumit']")
 	WebElement editWaitlistPartylink2;
 	
 	public WebElement getEditWaitlistPartylink2() {
