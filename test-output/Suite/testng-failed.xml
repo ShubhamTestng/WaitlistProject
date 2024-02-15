@@ -3,18 +3,17 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="listeners.ExtentReportListener"/>
+    <listener class-name="listeners.ScreenshotListener"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="endtoend.Create_Edit_delete_waitlist">
+      <class name="endtoend.CreateEditDeleteEtaWaitlist">
         <methods>
-          <include name="editParty" invocation-numbers="0"/>
-          <include name="restoreEditParty"/>
+          <include name="deleteParty"/>
           <include name="executeBeforeTest"/>
           <include name="executeAfterTest"/>
-          <include name="logout"/>
         </methods>
-      </class> <!-- endtoend.Create_Edit_delete_waitlist -->
+      </class> <!-- endtoend.CreateEditDeleteEtaWaitlist -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

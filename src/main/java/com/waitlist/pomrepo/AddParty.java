@@ -210,17 +210,17 @@ public class AddParty {
 	}
 
 	public WebElement getAdultButton() {
-		synchronised(By.xpath("(//img[contains(@src,\\\"data:image/png;base64,iVBOR\\\")])[1]"),adultButton);
+		synchronised(By.xpath("(//img[contains(@src,'data:image/png;base64,iVBOR')])[1]"),adultButton);
 		return adultButton;
 	}
 
 	public WebElement getKidsButton() {
-		synchronised(By.xpath("(//img[contains(@src,\\\"data:image/png;base64,iVBOR\\\")])[2]"),kidsButton);
+		synchronised(By.xpath("(//img[contains(@src,'data:image/png;base64,iVBOR')])[2]"),kidsButton);
 		return kidsButton;
 	}
 
 	public WebElement getAgedButton() {
-		synchronised(By.xpath("(//img[contains(@src,\\\"data:image/png;base64,iVBOR\\\")])[3]"),agedButton);
+		synchronised(By.xpath("(//img[contains(@src,'data:image/png;base64,iVBOR')])[3]"),agedButton);
 		return agedButton;
 	}
 

@@ -5,7 +5,7 @@
     <classes>
       <class name="endtoend.Create_Edit_delete_waitlist">
         <methods>
-          <include name="restoreEditParty"/>
+          <include name="deleteParty" invocation-numbers="0"/>
           <include name="executeBeforeTest"/>
           <include name="executeAfterTest"/>
         </methods>

@@ -110,7 +110,8 @@ public class CreateEditDeleteEtaWaitlist extends BaseClass {
 				
 		editParty.getYesAction().click();
 		log.info("Clicked yes button");
-	}
+		
+		}
 		
 	@Test(priority=3)
 	public void checkHistory() throws Throwable {
@@ -253,7 +254,9 @@ public class CreateEditDeleteEtaWaitlist extends BaseClass {
 	public void logout() throws Throwable{
 		WaitList waitlist = new WaitList(driver);
 		waitlist.getAccountButton().click();
+		log.info("Clicked account button");
 		waitlist.getLogoutButton().click();
+		log.info("Clicked logout button");
 	}
 	
 	

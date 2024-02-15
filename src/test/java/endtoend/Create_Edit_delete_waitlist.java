@@ -63,7 +63,7 @@ public class Create_Edit_delete_waitlist extends BaseClass {
 		
 		welcome.getWaitlistLink().click();
 		log.info("Clicked waitlist link");
-//		Assert.assertEquals(driver.getCurrentUrl().equals("https://fourtopstaging.appspot.com/v2/waitlist/?place_id=8197710014"), true);
+	
 			
 //	waitList.getAddPartyButton().click();
 //	addParty.getNameTextField().sendKeys(name);
@@ -83,15 +83,18 @@ public class Create_Edit_delete_waitlist extends BaseClass {
 //	addParty.getStatusButton().click();
 //	addParty.getNotesTextBox().sendKeys(RandomString.make(200));
 //	addParty.getNextButton().click();
-//	
-//	dropdown.dropdown(addParty.getTimeDropdown(),"45 Minutes");
-//	Thread.sleep(2000);
+//	driver.findElement(By.xpath("//tr[@id='assign_7']")).click();
 //	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 //	WebElement nextBtn = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//button[text()='next']"))));
 //	nextBtn.click();
-	
-//	driver.findElement(By.xpath("//tr[@id='assign_7']")).click();
 //	nextBtn.click();
+//	
+//	dropdown.dropdown(addParty.getTimeDropdown(),"45 Minutes");
+//	Thread.sleep(2000);
+//	
+//	
+//	
+//	
 //	addParty.getClosebuttonatAssignment().click();
 		
 	}	
