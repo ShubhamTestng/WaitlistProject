@@ -26,7 +26,7 @@ public class WaitList {
 		wait.until(ExpectedConditions.elementToBeClickable(element));	
 		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 		try {
-		Thread.sleep(2000); }
+		Thread.sleep(1500); }
 		catch (InterruptedException e) {
 		e.printStackTrace();	
 		}
@@ -79,6 +79,14 @@ public class WaitList {
 	public WebElement getAccountButton() {
 		synchronised(By.xpath("//a[@class='nav-link dropdown-toggle']"),accountButton);
 		return accountButton;
+	}
+	
+	@FindBy(xpath="//a[@id='greeting']")
+	WebElement accountButton0;
+	
+	public WebElement getAccountButton0() {
+		synchronised(By.xpath("//a[@id='greeting']"),accountButton0);
+		return accountButton0;
 	}
 	
 	@FindBy(xpath="//a[text()='Log Out']")

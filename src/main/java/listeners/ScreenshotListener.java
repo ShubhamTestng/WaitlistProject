@@ -5,6 +5,8 @@ import java.io.File
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -18,6 +20,7 @@ import com.waitlist.genericutility.BaseClass;
 
 
 public class ScreenshotListener extends TestListenerAdapter {
+	private static Map<String, String> screenshotPaths = new HashMap<>();
     @Override
     public void onTestFailure(ITestResult result) {
         BaseClass baseClass = new BaseClass();
@@ -31,10 +34,14 @@ public class ScreenshotListener extends TestListenerAdapter {
                 File destFile = new File((String) reportDirectory+"/failure_screenshots/"+methodName+"_"+formater.format(calendar.getTime())+".png");
                 FileUtils.copyFile(scrFile, destFile);
                 Reporter.log("<a href='"+ destFile.getAbsolutePath() + "'> <img src='"+ destFile.getAbsolutePath() + "' height='100' width='100'/> </a>");
+                screenshotPaths.put(methodName, destFile.getAbsolutePath());
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
+    }
+    public static Map<String, String> getScreenshotPaths() {
+    	return screenshotPaths;
     }
 }
 

@@ -2,8 +2,8 @@ package com.waitlist.genericutility;
 
 
 import org.openqa.selenium.WebDriver;
-
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
@@ -11,7 +11,8 @@ import org.testng.annotations.BeforeClass;
 
 
 public class BaseClass {
-	public static  WebDriver driver;
+	public static WebDriver driver;
+	
 	public WebDriverUtility webDriverUtils = new WebDriverUtility();
 	public FileUtility fileUtils = new FileUtility();
 	
@@ -40,6 +41,7 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		webDriverUtils.implicitWait(driver);
 		driver.get(fileUtils.readFromPropertyFile("url"));
+	
 	}
 	
 		
@@ -49,6 +51,8 @@ public class BaseClass {
 				
 		driver.manage().window().minimize();
 		driver.quit();
+	
+		
 	}
 	
 	

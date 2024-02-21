@@ -1,69 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-15T16:44:06 IST" name="Suite" finished-at="2024-02-15T16:46:32 IST" duration-ms="146562">
+  <suite started-at="2024-02-21T13:32:45 IST" name="Suite" finished-at="2024-02-21T13:33:16 IST" duration-ms="30949">
     <groups>
     </groups>
-    <test started-at="2024-02-15T16:44:06 IST" name="Test" finished-at="2024-02-15T16:46:32 IST" duration-ms="146562">
-      <class name="endtoend.CreateEditDeleteEtaWaitlist">
-        <test-method is-config="true" signature="executeBeforeTest()[pri:0, instance:endtoend.CreateEditDeleteEtaWaitlist@a1217f9]" started-at="2024-02-15T16:44:06 IST" name="executeBeforeTest" finished-at="2024-02-15T16:44:10 IST" duration-ms="4383" status="PASS">
+    <test started-at="2024-02-21T13:32:45 IST" name="Test" finished-at="2024-02-21T13:33:16 IST" duration-ms="30949">
+      <class name="endtoend.loginScenarios">
+        <test-method is-config="true" signature="executeBeforeTest()[pri:0, instance:endtoend.loginScenarios@1bdf8190]" started-at="2024-02-21T13:32:45 IST" name="executeBeforeTest" finished-at="2024-02-21T13:32:55 IST" duration-ms="9265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeBeforeTest -->
-        <test-method signature="createWaitList(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:endtoend.CreateEditDeleteEtaWaitlist@a1217f9]" started-at="2024-02-15T16:44:10 IST" name="createWaitList" data-provider="testDataProvider" finished-at="2024-02-15T16:44:27 IST" duration-ms="16449" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Richard]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[654879879]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Richard@yopmail.com]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="loginWithValidCredentials()[pri:0, instance:endtoend.loginScenarios@1bdf8190]" started-at="2024-02-21T13:32:55 IST" name="loginWithValidCredentials" finished-at="2024-02-21T13:33:16 IST" duration-ms="20997" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createWaitList -->
-        <test-method signature="deleteParty()[pri:2, instance:endtoend.CreateEditDeleteEtaWaitlist@a1217f9]" started-at="2024-02-15T16:44:27 IST" name="deleteParty" finished-at="2024-02-15T16:44:45 IST" duration-ms="18127" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteParty -->
-        <test-method signature="checkHistory()[pri:3, instance:endtoend.CreateEditDeleteEtaWaitlist@a1217f9]" started-at="2024-02-15T16:44:45 IST" name="checkHistory" finished-at="2024-02-15T16:44:55 IST" duration-ms="10037" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkHistory -->
-        <test-method signature="restoreParty()[pri:4, instance:endtoend.CreateEditDeleteEtaWaitlist@a1217f9]" started-at="2024-02-15T16:44:55 IST" name="restoreParty" finished-at="2024-02-15T16:44:59 IST" duration-ms="3894" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- restoreParty -->
-        <test-method signature="editParty()[pri:5, instance:endtoend.CreateEditDeleteEtaWaitlist@a1217f9]" started-at="2024-02-15T16:44:59 IST" name="editParty" finished-at="2024-02-15T16:45:40 IST" duration-ms="41316" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editParty -->
-        <test-method signature="restoreEditParty()[pri:6, instance:endtoend.CreateEditDeleteEtaWaitlist@a1217f9]" started-at="2024-02-15T16:45:40 IST" name="restoreEditParty" finished-at="2024-02-15T16:46:20 IST" duration-ms="40058" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- restoreEditParty -->
-        <test-method signature="logout()[pri:7, instance:endtoend.CreateEditDeleteEtaWaitlist@a1217f9]" started-at="2024-02-15T16:46:20 IST" name="logout" finished-at="2024-02-15T16:46:32 IST" duration-ms="11655" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="executeAfterTest()[pri:0, instance:endtoend.CreateEditDeleteEtaWaitlist@a1217f9]" started-at="2024-02-15T16:46:32 IST" name="executeAfterTest" finished-at="2024-02-15T16:46:32 IST" duration-ms="546" status="PASS">
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method is-config="true" signature="executeAfterTest()[pri:0, instance:endtoend.loginScenarios@1bdf8190]" started-at="2024-02-21T13:33:16 IST" name="executeAfterTest" finished-at="2024-02-21T13:33:16 IST" duration-ms="617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeAfterTest -->
-      </class> <!-- endtoend.CreateEditDeleteEtaWaitlist -->
+      </class> <!-- endtoend.loginScenarios -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
-  <suite started-at="2024-02-15T16:46:33 IST" name="Default Suite" finished-at="2024-02-15T16:46:33 IST" duration-ms="0">
+  <suite started-at="2024-02-21T13:33:17 IST" name="Default Suite" finished-at="2024-02-21T13:33:17 IST" duration-ms="0">
     <groups>
     </groups>
   </suite> <!-- Default Suite -->

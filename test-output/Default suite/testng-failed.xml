@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="endtoend.Create_Edit_delete_waitlist">
+      <class name="com.lambdatest.TestNGTodo1">
         <methods>
-          <include name="deleteParty" invocation-numbers="0"/>
-          <include name="executeBeforeTest"/>
-          <include name="executeAfterTest"/>
+          <include name="basicTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- endtoend.Create_Edit_delete_waitlist -->
+      </class> <!-- com.lambdatest.TestNGTodo1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,16 +1,12 @@
 package endtoend;
 
 
-import java.time.Duration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 import com.waitlist.genericutility.BaseClass;
 import com.waitlist.genericutility.DropdownUtility;
 import com.waitlist.genericutility.ExcelUtility;
@@ -23,7 +19,6 @@ import com.waitlist.pomrepo.LandingPage;
 import com.waitlist.pomrepo.LoginPage;
 import com.waitlist.pomrepo.WaitList;
 import com.waitlist.pomrepo.WelcomePage;
-import net.bytebuddy.utility.RandomString;
 
 
 public class Create_Edit_delete_waitlist extends BaseClass {

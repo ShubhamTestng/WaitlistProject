@@ -26,7 +26,7 @@ public class LandingPage {
 		wait.until(ExpectedConditions.elementToBeClickable(element));	
 		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 		try {
-		Thread.sleep(1000); }
+		Thread.sleep(1500); }
 		catch (InterruptedException e) {
 		e.printStackTrace();	
 		}

@@ -257,6 +257,7 @@ public class CreateEditDeleteEtaWaitlist extends BaseClass {
 		log.info("Clicked account button");
 		waitlist.getLogoutButton().click();
 		log.info("Clicked logout button");
+		Assert.assertEquals(false, true);
 	}
 	
 	
