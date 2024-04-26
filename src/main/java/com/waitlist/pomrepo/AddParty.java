@@ -5,11 +5,10 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.net.UrlChecker.TimeoutException;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AddParty {
@@ -38,7 +37,7 @@ public class AddParty {
 	@FindBy(xpath="/html/body/div[4]/div/div[1]/div/div/div[1]/button")
 	WebElement closeButton;
 		
-	@FindBy(xpath="/html/body/div[4]/div/div[1]/div/div/div[1]/h5/span")
+	@FindBy(xpath="/html/body/div[3]/div/div/div[1]/div[4]/button[3]/i")
 	WebElement addPartyLabel;
 	
 	@FindBy(xpath="//input[@name='name']")
@@ -162,6 +161,7 @@ public class AddParty {
 	public WebElement getTimeDropdown() {
 		synchronised(By.name("waitTime"),timeDropdown);
 		return timeDropdown;
+			
 	}
 
 	@FindBy(xpath="//span[text()='Choose Time']/../..//button[@class='close']")

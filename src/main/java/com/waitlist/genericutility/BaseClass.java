@@ -40,7 +40,7 @@ public class BaseClass {
 		
 		driver.manage().window().maximize();
 		webDriverUtils.implicitWait(driver);
-		driver.get(fileUtils.readFromPropertyFile("url"));
+		driver.get(fileUtils.readFromPropertyFile("produrl"));
 	
 	}
 	

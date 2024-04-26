@@ -1,8 +1,14 @@
 package endtoend;
 
 
+import java.time.Duration;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -19,6 +25,8 @@ import com.waitlist.pomrepo.LandingPage;
 import com.waitlist.pomrepo.LoginPage;
 import com.waitlist.pomrepo.WaitList;
 import com.waitlist.pomrepo.WelcomePage;
+
+import net.bytebuddy.utility.RandomString;
 
 
 public class Create_Edit_delete_waitlist extends BaseClass {
@@ -50,7 +58,7 @@ public class Create_Edit_delete_waitlist extends BaseClass {
 		
 		login.getPasswordTextField().sendKeys(fileUtils.readFromPropertyFile("password"));
 		log.info("Entered password");
-	
+			
 		login.getLoginButton().click();
 		log.info("Clicked login button");
 		Assert.assertEquals(driver.getCurrentUrl().equals("https://fourtopstaging.appspot.com/welcome"), true);
@@ -60,37 +68,37 @@ public class Create_Edit_delete_waitlist extends BaseClass {
 		log.info("Clicked waitlist link");
 	
 			
-//	waitList.getAddPartyButton().click();
-//	addParty.getNameTextField().sendKeys(name);
-//	addParty.getPhoneTextField().sendKeys(Phone);
-//	addParty.getEmailTextField().sendKeys(Email);
-//	addParty.getMemberSize().click();
-//	addParty.getAdultButton().click();
-//	
-//	for(int i=1;i<=2;i++) {
-//	addParty.getKidsButton().click();
-//	}
-//	
-//	for(int i=1;i<=3;i++) {
-//	addParty.getAgedButton().click();
-//	}
-//	
-//	addParty.getStatusButton().click();
-//	addParty.getNotesTextBox().sendKeys(RandomString.make(200));
-//	addParty.getNextButton().click();
-//	driver.findElement(By.xpath("//tr[@id='assign_7']")).click();
-//	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
-//	WebElement nextBtn = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//button[text()='next']"))));
-//	nextBtn.click();
-//	nextBtn.click();
-//	
-//	dropdown.dropdown(addParty.getTimeDropdown(),"45 Minutes");
-//	Thread.sleep(2000);
-//	
-//	
-//	
-//	
-//	addParty.getClosebuttonatAssignment().click();
+	waitList.getAddPartyButton().click();
+	addParty.getNameTextField().sendKeys(name);
+	addParty.getPhoneTextField().sendKeys(Phone);
+	addParty.getEmailTextField().sendKeys(Email);
+	addParty.getMemberSize().click();
+	addParty.getAdultButton().click();
+	
+	for(int i=1;i<=2;i++) {
+	addParty.getKidsButton().click();
+	}
+	
+	for(int i=1;i<=3;i++) {
+	addParty.getAgedButton().click();
+	}
+	
+	addParty.getStatusButton().click();
+	addParty.getNotesTextBox().sendKeys(RandomString.make(200));
+	addParty.getNextButton().click();
+	driver.findElement(By.xpath("//tr[@id='assign_7']")).click();
+	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+	WebElement nextBtn = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//button[text()='next']"))));
+	nextBtn.click();
+	nextBtn.click();
+	
+	dropdown.dropdown(addParty.getTimeDropdown(),"45 Minutes");
+	Thread.sleep(2000);
+	
+	
+	
+	
+	addParty.getClosebuttonatAssignment().click();
 		
 	}	
 	

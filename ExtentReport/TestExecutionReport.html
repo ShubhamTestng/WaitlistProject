@@ -47,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Feb 21, 2024 01:32:44 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Apr 25, 2024 11:59:16 AM</span>
 				</a>
 			</li>
 			<li>
@@ -73,6 +73,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -86,7 +87,7 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>Suite</a></li>
-					<li><a href='#'>loginScenarios</a></li>
+					<li><a href='#'>Create_Edit_delete_waitlist</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -134,10 +135,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='60%'><span class='strong'>3</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='40%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -149,10 +150,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='25%'><span class='strong'>2</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='75%'>6</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -169,20 +170,20 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>loginWithValidCredentials</span>
-						<span class='test-time'>Feb 21, 2024 01:32:55 PM</span>
+						<span class='test-name'>createWaitList</span>
+						<span class='test-time'>Apr 25, 2024 11:59:25 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 21, 2024 01:32:55 PM</span>
-	<span class='label end-time'>Feb 21, 2024 01:33:16 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+997ms</span>
+	<span class='label start-time'>Apr 25, 2024 11:59:25 AM</span>
+	<span class='label end-time'>Apr 25, 2024 11:59:46 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+825ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>Suite</span>
-				<span class='category label white-text'>loginScenarios</span>
+				<span class='category label white-text'>Create_Edit_delete_waitlist</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -197,11 +198,183 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:33:16 PM</td>
+					<td class='timestamp'>11:59:46 AM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
 		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>deleteParty</span>
+						<span class='test-time'>Apr 25, 2024 11:59:46 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 25, 2024 11:59:46 AM</span>
+	<span class='label end-time'>Apr 25, 2024 12:00:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 31s+190ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Suite</span>
+				<span class='category label white-text'>Create_Edit_delete_waitlist</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:00:17 PM</td>
+					<td class='step-details'>Test failed. Failure Reason: Expected condition failed: waiting for visibility of element located by By.xpath: //td[text()='Robert'] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52411}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52411/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30b263d300e4c0d687c9ca29b4c90b6b</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:00:17 PM</td>
+					<td class='step-details'>Screenshot<img data-featherlight='C:\Users\wbox42\eclipse-workspace\WaitListMeSynchronised\target\surefire-reports\failure_screenshots\deleteParty_25_04_2024_12_00_17.png' width='10%' src='C:\Users\wbox42\eclipse-workspace\WaitListMeSynchronised\target\surefire-reports\failure_screenshots\deleteParty_25_04_2024_12_00_17.png' data-src='C:\Users\wbox42\eclipse-workspace\WaitListMeSynchronised\target\surefire-reports\failure_screenshots\deleteParty_25_04_2024_12_00_17.png'></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:00:17 PM</td>
+					<td class='step-details'>Test failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>checkHistory</span>
+						<span class='test-time'>Apr 25, 2024 12:00:17 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 25, 2024 12:00:17 PM</span>
+	<span class='label end-time'>Apr 25, 2024 12:00:50 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 32s+912ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Suite</span>
+				<span class='category label white-text'>Create_Edit_delete_waitlist</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:00:50 PM</td>
+					<td class='step-details'>Test failed. Failure Reason: Expected condition failed: waiting for visibility of element located by By.xpath: //span[text()='Robert']/../../td[7]/div[@class='visual-custom-class style__VisualButtons-ov6qif-1 izPKcx'] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Users\wbox42\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52411}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52411/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30b263d300e4c0d687c9ca29b4c90b6b</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:00:50 PM</td>
+					<td class='step-details'>Screenshot<img data-featherlight='C:\Users\wbox42\eclipse-workspace\WaitListMeSynchronised\target\surefire-reports\failure_screenshots\checkHistory_25_04_2024_12_00_50.png' width='10%' src='C:\Users\wbox42\eclipse-workspace\WaitListMeSynchronised\target\surefire-reports\failure_screenshots\checkHistory_25_04_2024_12_00_50.png' data-src='C:\Users\wbox42\eclipse-workspace\WaitListMeSynchronised\target\surefire-reports\failure_screenshots\checkHistory_25_04_2024_12_00_50.png'></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:00:50 PM</td>
+					<td class='step-details'>Test failed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>restoreParty</span>
+						<span class='test-time'>Apr 25, 2024 12:00:50 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 25, 2024 12:00:50 PM</span>
+	<span class='label end-time'>Apr 25, 2024 12:00:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+950ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Suite</span>
+				<span class='category label white-text'>Create_Edit_delete_waitlist</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:00:54 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>editParty</span>
+						<span class='test-time'>Apr 25, 2024 12:00:54 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 25, 2024 12:00:54 PM</span>
+	<span class='label end-time'>Apr 25, 2024 12:00:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Suite</span>
+				<span class='category label white-text'>Create_Edit_delete_waitlist</span>
+			</div>
 	</div>
 					</div>
 				</li>
@@ -259,13 +432,14 @@
 					<div class='category-heading'>
 						<span class='category-name'>Suite</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label pass'>3</span>
+							<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 					
@@ -280,8 +454,28 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 21, 2024 01:32:55 PM</td>
-										<td class='linked' test-id='1'>loginWithValidCredentials</td>
+										<td>Apr 25, 2024 11:59:25 AM</td>
+										<td class='linked' test-id='1'>createWaitList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 25, 2024 11:59:46 AM</td>
+										<td class='linked' test-id='2'>deleteParty</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 25, 2024 12:00:17 PM</td>
+										<td class='linked' test-id='3'>checkHistory</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 25, 2024 12:00:50 PM</td>
+										<td class='linked' test-id='4'>restoreParty</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 25, 2024 12:00:54 PM</td>
+										<td class='linked' test-id='5'>editParty</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -291,15 +485,16 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>loginScenarios</span>
+						<span class='category-name'>Create_Edit_delete_waitlist</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label pass'>3</span>
+							<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 					
@@ -314,8 +509,28 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 21, 2024 01:32:55 PM</td>
-										<td class='linked' test-id='1'>loginWithValidCredentials</td>
+										<td>Apr 25, 2024 11:59:25 AM</td>
+										<td class='linked' test-id='1'>createWaitList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 25, 2024 11:59:46 AM</td>
+										<td class='linked' test-id='2'>deleteParty</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 25, 2024 12:00:17 PM</td>
+										<td class='linked' test-id='3'>checkHistory</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 25, 2024 12:00:50 PM</td>
+										<td class='linked' test-id='4'>restoreParty</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 25, 2024 12:00:54 PM</td>
+										<td class='linked' test-id='5'>editParty</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -344,31 +559,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>5</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 21, 2024 01:32:44 PM</div>
+					<div class='panel-lead'>Apr 25, 2024 11:59:16 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 21, 2024 01:33:16 PM</div>
+			 		<div class='panel-lead'>Apr 25, 2024 12:01:24 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 32s+589ms</div>
+					<div class='panel-lead'>0h 2m 8s+278ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -385,20 +600,20 @@
 						</tr>
 						<tr>
 							<td>Suite</td>
-							<td>1</td>
-							<td>0</td>
+							<td>3</td>
+							<td>2</td>
 							<td>0</td>
 							<td>
-									100%
+									60%
 							</td>
 						</tr>
 						<tr>
-							<td>loginScenarios</td>
-							<td>1</td>
-							<td>0</td>
+							<td>Create_Edit_delete_waitlist</td>
+							<td>3</td>
+							<td>2</td>
 							<td>0</td>
 							<td>
-									100%
+									60%
 							</td>
 						</tr>
 					</table>
@@ -414,22 +629,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 0,
+				passParent: 3,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 2,
 				
-				passChild: 1,
-				failChild: 0,
+				passChild: 2,
+				failChild: 6,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 6,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

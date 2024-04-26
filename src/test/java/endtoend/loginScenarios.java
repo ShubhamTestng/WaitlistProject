@@ -20,6 +20,8 @@ import com.waitlist.pomrepo.WaitList;
 public class loginScenarios extends BaseClass {
 	public FileUtility fileUtils = new FileUtility();
 	public Logger log = LogManager.getLogger(Create_Edit_delete_waitlist.class);	
+	
+	
 	@Test
 	public void loginWithValidCredentials() throws IOException {
 		
