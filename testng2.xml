@@ -11,6 +11,7 @@
     <classes>
             <class name="endtoend.loginScenarios"></class>
             <class name="endtoend.TestClass"></class>
+            
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
